@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
 import NextLink from 'next/link'
-import { SimpleGrid, Text, Link,  Button } from '@chakra-ui/react'
+import { Grid, Text, Link,  Button } from '@chakra-ui/react'
 import Tool from '../components/Tool/Tools'
 import { ToolBox } from '../data/tools/toolBox'
 import Container from '../components/Container/index'
 import Builds from '../components/Currently/index'
 import  Footer  from '../components/Footer/index'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
+
 
 const Home: NextPage = () => {
 
@@ -49,9 +50,7 @@ const Home: NextPage = () => {
 
         <div className="p-4 text-black ">
 
-        <SimpleGrid   
-          mt={5} ml={16} templateColumns={["1fr", "repeat(2,1fr)", "repeat(3, 1fr)" ]}
-          gap={[1, 4, 4, 4]} >
+        <div className='grid grid-cols-2 gap-8 my-3'>
           {/* Lazy */}
             {ToolBox.sort((a, b) => {
               if (a.name < b.name) {
@@ -69,7 +68,7 @@ const Home: NextPage = () => {
                 url={tool.url}
               />
             ))}
-          </SimpleGrid>
+          </div>
         </div>
       </div>
 
@@ -77,16 +76,11 @@ const Home: NextPage = () => {
       
         <Text className="mt-1 text-lg indent-0.5 font-sfprodisplaylight text-gray-700">
                Projects that I am working on below, check out the repositories to stay updated. 
-        </Text>      
-          <Text className='font-sfprodisplaylight indent-0.5 text-gray-700'>View a few of my completed builds here
-            <NextLink href="/projects" passHref scroll={false}>
-              <Button rightIcon=
-              {<ChevronRightIcon fontSize='1.5em' border='2px solid #ff63c3' borderRadius="20px" p={1} color='#ff63c3'/>}
-                p={6}  marginLeft="2"  fontFamily="sfprodisplaybold" >
-              </Button>
-            </NextLink> 
-          </Text>  
-   
+        </Text>              
+   <NextLink href="/projects"  passHref scroll={false}>
+        
+            <Link className='flex font-sfprodisplaylight indent-0.5 text-gray-700' >View my completed builds here {''} <ChevronRightIcon className='w-6 h-6 text-pink3' /></Link> 
+            </NextLink>
           <div className='mt-4'>
              <Builds />
              </div>

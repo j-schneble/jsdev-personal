@@ -40,6 +40,7 @@ module.exports = {
         blu1: '#3f91f2',
         purp2: '#7816f0',
         grgray: '#63686b',
+        pink3: '#ff63c3',
         
       },
       fontFamily: {

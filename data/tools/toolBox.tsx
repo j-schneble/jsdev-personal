@@ -26,11 +26,11 @@ interface Tool {
 }
 
 export const ToolBox: Tool[] = [
-    {
-        name: 'NextJS',
-        icon: <SiNextdotjs />,
+      {
+        name: 'React.js',
+        icon: <FaReact />,
         url: "https://javascript.com/",
-      },
+      },   
       { name: 'Three.js',
         icon: <SiThreedotjs />,
         url: "https://javascript.com/",
@@ -46,13 +46,13 @@ export const ToolBox: Tool[] = [
         url: "https://javascript.com/",
       },
       {
-        name: 'Git',
+        name: 'Github',
         icon: <SiGit />,
         url: "https://javascript.com/",
       },
       {
-        name: 'React',
-        icon: <FaReact />,
+        name: 'Next.js',
+        icon: <SiNextdotjs />,
         url: "https://javascript.com/",
       },
     

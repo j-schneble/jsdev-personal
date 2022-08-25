@@ -16,7 +16,7 @@ export default function Tool({
   return (
     <a
       className={cn(
-        'flex gap-5 items-center',
+        'flex gap-5 space-betweenitems-center',
         'hover:bg-gray-100 dark:hover:bg-gray-100',
         'rounded-lg ',
         'cursor-pointer'
@@ -25,9 +25,9 @@ export default function Tool({
       target='_blank'
       rel='noopener noreferrer'
     >
-      <div className='flex flex-row justify-between'>
-      <div className='flex items-center pr-2'>{icon}</div>
-      <div className='w-full py-3 pr-1 left-2'>
+      <div className='flex p-2 ml-1 rounded-sm bg-slate-300/10 '>
+      <div className='pr-3'>{icon}</div>
+      <div className='w-full pr-4 '>
         <h2 className=' font-sfprodisplaytext'>{name}</h2>
         </div>
       </div>
