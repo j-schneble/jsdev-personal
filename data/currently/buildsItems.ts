@@ -25,7 +25,7 @@ export const buildsList = [
       name: "Personal Site",
       description:
       "Personal developer site, built using Nextjs, Typescript, Chakra-UI, Framer-Motion and some Tailwind to make it look nice.",
-      image_path: '/images/new.png',
+      image_path: '/images/another.png',
       deployed_url: 'https://jackschneble.com',
       source_url: 'https://github.com/j-schneble/js-personal'
      
