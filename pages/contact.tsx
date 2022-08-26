@@ -85,7 +85,7 @@ const Contact = () => {
         
           <div className='mb-6 overflow-none overscroll-y-none overflow-y-none'>
               <Box 
-                className='max-w-4xl px-4 mx-auto rounded-md shad backdrop-blur-xl bg-bg-gradient-to-b from-gray-300/90 to-slate-200/90 bg-gradient-to-r sm:px-6 lg:px-8' 
+                className='max-w-4xl px-4 mx-auto rounded-md shad backdrop-blur-xl bg-bg-gradient-to-b from-gray-300/25 to-slate-200/25 bg-gradient-to-r sm:px-6 lg:px-8' 
                 >
                  <div className='px-3 py-3'>
 

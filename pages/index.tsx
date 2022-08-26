@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
            <h1 className='text-3xl font-bold text-black indent-1 font-sfprodisplaylight'>  Jack Schneble </h1>
         </div>
-        <div className='flex flex-col indent-0.5 text-left text-lg font-sfprodisplaylight gap-2 text-gray-700'>
+        <div className='flex flex-col indent-0.5 text-left text-lg border-gray-300/50 pl-2 pt-1 border-l-2 font-sfprodisplaylight gap-2 text-gray-700'>
           <p>
            A developer that believes in discovering the &quot;why.&quot; As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create 
                 efficient and beautiful software. 
