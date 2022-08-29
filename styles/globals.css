@@ -309,6 +309,95 @@
   box-shadow: rgba(165, 180, 252, 0.4) 0px 5px, rgba(165, 180, 252, 0.3) 0px 10px, rgba(165, 180, 252, 0.2) 0px 15px, rgba(165, 180, 252, 0.1) 0px 20px, rgba(165, 180, 252, 0.05) 0px 25px;
 }
 
+.shad1 {
+
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
+  backdrop-filter:
+  blur(15px)
+  saturate(1000%);
+  background: linear-gradient(
+    120deg,
+    rgba(214, 214, 214, 0.15),
+    rgba(245, 244, 244, 0.15),
+    rgba(214, 214, 214, .15)
+  );
+}
+
+.shad2 {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .15);
+  backdrop-filter:
+  blur(15px)
+  saturate(1000%);
+  background: linear-gradient(
+    120deg,
+    rgba(57, 57, 57, 0.45),
+    rgba(41, 41, 41, 0.75),
+    rgba(57, 57, 57, 0.45)
+  );
+}
+
+.buttonmsg {
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+  background: #434343 none repeat scroll 0% 0%;
+  border: 1px solid #242424;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 0 rgba(0, 0, 0, 0.5) inset,
+    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+
+  transition: all 0.2s linear 0s;
+
+  text-align: center;
+  text-decoration: none;
+}
+.buttonmsg:hover,
+.buttonmsg:focus {
+  text-decoration: none;
+  box-shadow:
+    0 2px 5px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 0 0 rgba(0, 0, 0, 0.25) inset,
+    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+.buttonmsg:active {
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0) inset,
+    0 0 5px rgba(0, 0, 0, 0.5) inset,
+    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+}
+.buttonmsg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background:-moz-linear-gradient('to-left', rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  background:-webkit-gradient('from-linear', 'to-left',  'to-top', 'to-right', 'to-top', color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+  background:-webkit-linear-gradient('to-left', rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  background:linear-gradient('to-left', rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out 0s;
+}
+.buttonmsg:active::before {
+  opacity: 0;
+}
+.buttonmsg:hover::before {
+  left: 45%;
+}
+
 .shadd {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
