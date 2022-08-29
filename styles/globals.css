@@ -304,6 +304,20 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
+.card {
+  transform: translate(0%, -60%);
+
+
+
+
+}
+.gl {
+  background-color: rgba(255, 255, 255, .45);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(15px);
+}
 
 .shad {
   box-shadow: rgba(165, 180, 252, 0.4) 0px 5px, rgba(165, 180, 252, 0.3) 0px 10px, rgba(165, 180, 252, 0.2) 0px 15px, rgba(165, 180, 252, 0.1) 0px 20px, rgba(165, 180, 252, 0.05) 0px 25px;

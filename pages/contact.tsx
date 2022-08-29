@@ -80,7 +80,7 @@ const Contact = () => {
 
     
        <Container>
-        <div className='mb-6 overflow-none overscroll-y-none overflow-y-none'>
+        <div className='mt-1 mb-6 overflow-none overscroll-y-none overflow-y-none'>
           <Box 
             className='max-w-4xl px-4 mx-auto rounded-md backdrop-blur-lg
             [ p-8 md:p-10 lg:p-10 ]
@@ -88,7 +88,10 @@ const Contact = () => {
             [ border-[1px] border-solid border-white border-opacity-30 ]
             [ shadow-gray-800/40 shadow-2xl ] sm:px-6 lg:px-8' 
             >
-            <div className='px-3 py-1'>
+            <div className=''>
+
+
+            
               <Heading 
                 className='pb-2 text-3xl text-black font-sfprodisplaybold'
               >
@@ -98,13 +101,16 @@ const Contact = () => {
                 </span> 
               </Heading>
 
-            <h2 className='pb-3 mb-4 text-gray-500 text-md font-sfprodisplaylight'>
+            <h2 className='pb-3 text-gray-500 text-md font-sfprodisplaylight'>
               Feel free to reach out anytime
             </h2>
-          <Box my={2}  textAlign="left">    
+       
+          <Box my={2}   textAlign="left"> 
+       
             <form onSubmit={handleSubmit}>
+   
               <FormControl  >
-                <div className='grid grid-cols-2 gap-2 mt-2 mb-2'>
+                <div className='grid grid-cols-2 gap-2 mt-3 mb-2'>
                   <Box >
                      <FormLabel className='pt-1 pb-1 text-sm tracking-wider text-gray-600/90 font-sfprodisplaylight' key={'name'}>Full Name<span className='isRequired'>*</span> </FormLabel>
                       <Input 
@@ -149,7 +155,7 @@ const Contact = () => {
           </FormControl>
           
           <Button 
-            className='w-50% py-2 px-2  mt-4 buttonmsg  tracking-wider rounded-sm text-md font-sfprodisplaybold '
+            className='w-full px-2 py-2 mt-5 tracking-wider rounded-sm buttonmsg text-md font-sfprodisplaybold'
             variant="solid"
             type="submit"
             width="full"
