@@ -79,101 +79,101 @@ const Contact = () => {
   return (
 
     
-       <Container>
-        <div className='mt-1 mb-6 overflow-none overscroll-y-none overflow-y-none'>
-          <Box 
-            className='max-w-4xl px-4 mx-auto rounded-md backdrop-blur-lg
-            [ p-8 md:p-10 lg:p-10 ]
-            [ bg-gradient-to-b from-white/60 to-white/30 ]
-            [ border-[1px] border-solid border-white border-opacity-30 ]
-            [ shadow-gray-800/40 shadow-2xl ] sm:px-6 lg:px-8' 
-            >
-            <div className=''>
-
-
-            
-              <Heading 
-                className='pb-2 text-3xl text-black font-sfprodisplaybold'
+    <Container>
+    <div className='mt-1 mb-6 overflow-none overscroll-y-none overflow-y-none'>
+    <div className="container1">
+  <div className="box1">
+  
+    <div className="content1">
+    
+      <Box > 
+      <Heading 
+                className='pt-1 pb-2 pl-2 text-3xl text-black font-sfprodisplaybold'
               >
-                Let's get in touch 
-                <span className='text-2xl'
-                >☑
-                </span> 
+                Let's get in touch ☑
+               
               </Heading>
+            </Box>
+            <Box my={2}   textAlign="left">
 
-            <h2 className='pb-3 text-gray-500 text-md font-sfprodisplaylight'>
+            <h2 className='pb-3 pl-3 text-black text-md font-sfprodisplaylight'>
               Feel free to reach out anytime
             </h2>
-       
-          <Box my={2}   textAlign="left"> 
-       
-            <form onSubmit={handleSubmit}>
    
-              <FormControl  >
-                <div className='grid grid-cols-2 gap-2 mt-3 mb-2'>
-                  <Box >
-                     <FormLabel className='pt-1 pb-1 text-sm tracking-wider text-gray-600/90 font-sfprodisplaylight' key={'name'}>Full Name<span className='isRequired'>*</span> </FormLabel>
-                      <Input 
-                        className='w-full py-1 pl-4 text-black rounded-md shadow-xs bg-slate-100/75 '
-                        id='name'
-                        type={'name'}
-                        value={name}
-                        placeholder="Your Name"
-                        onChange={event => setName(event.currentTarget.value)}
-                      />
-                  </Box>
-                <Box>
-                <FormLabel className='pt-1 pb-1 pl-0.5 text-sm tracking-wider text-gray-600/90 font-sfprodisplaylight'  key={'email'}>Email<span className='isRequired'>*</span></FormLabel>
-                <Input 
-                  className='w-full py-1 pl-4 text-black rounded-md shadow-xs bg-slate-100/75 '
-                  id='email'
-                  type={'email'}
-                  value={email}
-                  placeholder='Your Email'
-                  onChange={event => setEmail(event.currentTarget.value)}            
-                />
-                </Box>
-              </div>
-            </FormControl>
-          <FormControl >
-          <FormLabel 
-            className='pt-1 pb-1 text-sm tracking-wider text-gray-600/90 font-sfprodisplayregular' 
-            htmlFor="message" key={'message'}>
-            Message
-            <span className='isRequired'>
-              *
-            </span>
-          </FormLabel>
-          <Input
-          className="block w-full py-3 pl-4 mb-3 text-black rounded-md shadow-xs bg-slate-100/75"
-          id='message'
-          type={'message'}
-          value={message}
-          placeholder="Type your message..."
-          onChange={event => setMessage(event.currentTarget.value)}  
-          />
-          </FormControl>
-          
-          <Button 
-            className='w-full px-2 py-2 mt-5 tracking-wider rounded-sm buttonmsg text-md font-sfprodisplaybold'
-            variant="solid"
-            type="submit"
-            width="full"
-            mt={4}
-            isLoading={isLoading}
-            loadingText='Submitting'                                            
-          >
-            Send Message 
-          <span className='pl-1.5 mt-0.5 text-base'>
-            ➤
-          </span>
-          </Button>
-          </form>                
-         </Box>
-        </div>
-       </Box>      
+        <form onSubmit={handleSubmit}>
+
+          <FormControl  >
+            <div className='grid grid-cols-2 gap-2 mt-3 mb-2'>
+              <Box >
+                 <FormLabel className='pt-1 pb-1 pl-0.5 tracking-wide text-md text-gray-900 font-sfprodisplayregular ' key={'name'}>Full Name </FormLabel>
+                  <Input 
+                    className='w-full py-1 pl-2 text-black rounded-md shadow-xs bg-slate-100/75'
+                    id='name'
+                    type={'name'}
+                    value={name}
+                    placeholder="Your Name"
+                    onChange={event => setName(event.currentTarget.value)}
+                  />
+              </Box>
+            <Box>
+            <FormLabel className='pt-1 pb-2 pl-0.5 text-md tracking-wide text-gray-900/90 font-sfprodisplayregular'  key={'email'}>Email</FormLabel>
+            <Input 
+              className='w-full py-1 pl-2 text-black rounded-md shadow-xs bg-slate-100/75'
+              id='email'
+              type={'email'}
+              value={email}
+              placeholder='Your Email'
+              onChange={event => setEmail(event.currentTarget.value)}            
+            />
+            </Box>
+          </div>
+        </FormControl>
+      <FormControl >
+      <FormLabel 
+        className='pt-1 pb-1 tracking-wide text-md text-gray-900/90 font-sfprodisplayregular' 
+        htmlFor="message" key={'message'}>
+        Message
+      
+      </FormLabel>
+      <Input
+      className="block w-full py-3 pl-4 mb-3 text-black rounded-md shadow-xs bg-slate-100/75"
+      id='message'
+      type={'message'}
+      value={message}
+      placeholder="Type your message..."
+      onChange={event => setMessage(event.currentTarget.value)}  
+      />
+      </FormControl>
+      
+      <Button 
+        className='w-full px-2 py-2 mt-5 tracking-wider rounded-sm buttonmsg text-md font-sfprodisplaybold'
+        variant="solid"
+        type="submit"
+        width="full"
+        mt={4}
+        isLoading={isLoading}
+        loadingText='Submitting'                                            
+      >
+        Send Message 
+      
+      </Button>
+      </form>                
+     </Box>
+     </div>
       </div>
+      </div>
+      </div>
+     
+      
+
+
+        
+         
+
+         
+     
  </Container>
+
 
     )
   }
