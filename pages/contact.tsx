@@ -80,7 +80,7 @@ const Contact = () => {
 
     
     <Container>
-    <div className='mt-1 mb-6 overflow-none overscroll-y-none overflow-y-none'>
+    <div className=' overflow-none overscroll-y-none overflow-y-none over'>
     <div className="container1">
   <div className="box1">
   
