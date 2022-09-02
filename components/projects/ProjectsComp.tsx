@@ -11,7 +11,7 @@ export default function ProjectComp() {
         <Parallax key={key}>
           <div
            
-            className='transition-all border rounded-lg cursor-pointer border-gray-400/25 shadowguy bg-bg-gradient-to-b from-gray-700 to-gray-600 bg-gradient-to-r group hover:bg-gray-500'
+            className='transition-all border rounded-lg cursor-pointer border-gray-400/25 shadowguy bg-bg-gradient-to-b from-gray-900/95 to-gray-700 bg-gradient-to-r group hover:bg-gray-500'
           >
             <div className='h-52 w-20% relative'>
               <Image

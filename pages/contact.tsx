@@ -79,16 +79,21 @@ const Contact = () => {
   return (
 
     
-    <Container>
-    <div className=' overflow-none overscroll-y-none overflow-y-none over'>
-    <div className="container1">
-  <div className="box1">
-  
-    <div className="content1">
+    <Container className='overflow-none overscroll-y-none overflow-y-none over' >
+
+<Box className='mt-10'>
+      <div className='contain'>
+
+      <div className='card'>
+   
+
+    <div className='content'>
+      
     
-      <Box > 
+    
+      <Box className='mt-1'> 
       <Heading 
-                className='pt-1 pb-2 pl-2 text-3xl text-black font-sfprodisplaybold'
+                className='pt-1 pb-1 pl-2 text-3xl text-black font-sfprodisplaybold'
               >
                 Let's get in touch ☑
                
@@ -96,18 +101,18 @@ const Contact = () => {
             </Box>
             <Box my={2}   textAlign="left">
 
-            <h2 className='pb-3 pl-3 text-black text-md font-sfprodisplaylight'>
+            <h2 className='pb-2 pl-3 text-gray-800 text-md font-sfprodisplaylight'>
               Feel free to reach out anytime
             </h2>
    
         <form onSubmit={handleSubmit}>
 
           <FormControl  >
-            <div className='grid grid-cols-2 gap-2 mt-3 mb-2'>
+            <div className='grid grid-cols-2 gap-1 mt-3 mb-2 ml-3 mr-3'>
               <Box >
-                 <FormLabel className='pt-1 pb-1 pl-0.5 tracking-wide text-md text-gray-900 font-sfprodisplayregular ' key={'name'}>Full Name </FormLabel>
+                 <FormLabel className='pt-1 pb-1 pl-0.5 tracking-wide text-md  text-gray-900/90 font-sfprodisplayregular ' key={'name'}>Full Name </FormLabel>
                   <Input 
-                    className='w-full py-1 pl-2 text-black rounded-md shadow-xs bg-slate-100/75'
+                    className='w-full py-1 pl-2 text-gray-800 rounded-sm shadow-xs lit bt'
                     id='name'
                     type={'name'}
                     value={name}
@@ -118,7 +123,7 @@ const Contact = () => {
             <Box>
             <FormLabel className='pt-1 pb-2 pl-0.5 text-md tracking-wide text-gray-900/90 font-sfprodisplayregular'  key={'email'}>Email</FormLabel>
             <Input 
-              className='w-full py-1 pl-2 text-black rounded-md shadow-xs bg-slate-100/75'
+              className='w-full py-1 pl-2 text-gray-800 rounded-sm shadow-xs lit bt'
               id='email'
               type={'email'}
               value={email}
@@ -128,15 +133,15 @@ const Contact = () => {
             </Box>
           </div>
         </FormControl>
-      <FormControl >
+      <FormControl className='ml-3 mr-3' >
       <FormLabel 
-        className='pt-1 pb-1 tracking-wide text-md text-gray-900/90 font-sfprodisplayregular' 
+        className='pt-1 pb-1 pl-1 tracking-wide text-gray-900/90 text-md font-sfprodisplayregular' 
         htmlFor="message" key={'message'}>
         Message
       
       </FormLabel>
       <Input
-      className="block w-full py-3 pl-4 mb-3 text-black rounded-md shadow-xs bg-slate-100/75"
+      className="block w-full py-3 pl-4 mb-3 text-gray-800 rounded-sm shadow-xs lit bt"
       id='message'
       type={'message'}
       value={message}
@@ -144,34 +149,37 @@ const Contact = () => {
       onChange={event => setMessage(event.currentTarget.value)}  
       />
       </FormControl>
-      
+      <FormControl>
       <Button 
-        className='w-full px-2 py-2 mt-5 tracking-wider rounded-sm buttonmsg text-md font-sfprodisplaybold'
+        className='w-full px-2 py-2 mt-5 msgbtn'
+        marginLeft={'1'}
+        marginRight={'1'}
         variant="solid"
         type="submit"
-        width="full"
+        
         mt={4}
         isLoading={isLoading}
-        loadingText='Submitting'                                            
+        loadingText='Sending'                                            
       >
+        <p className='font-semibold tracking-wider text-gray-50 font-sfprodisplayregular'>
         Send Message 
+        </p>
+     
       
       </Button>
+      </FormControl>
       </form>                
      </Box>
      </div>
-      </div>
-      </div>
-      </div>
-     
-      
+     </div>
+     </div>
+ 
+    
 
 
-        
+     </Box>
          
 
-         
-     
  </Container>
 
 

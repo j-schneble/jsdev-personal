@@ -132,7 +132,7 @@ export default function Container({
               </div>
             )}
             {!projectsNav && (
-              <div className='flex flex-row items-center space-x-4'>
+              <div className='flex flex-row items-center space-x-4 '>
                 <a
                   href='https://www.linkedin.com/in/jack-schneble'
                   className='visible'
@@ -140,7 +140,7 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Twitter'
                 >
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current lit2 text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
@@ -149,7 +149,7 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current lit2 text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
                 </a>
               </div>
             )}

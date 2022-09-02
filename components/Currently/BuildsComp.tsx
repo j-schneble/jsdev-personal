@@ -10,8 +10,9 @@ export default function Builds() {
         <Parallax key={key}>
           <div
             onClick={() => window.open(item.link, '_blank')}
-            className='transition-all border rounded-lg cursor-pointer border-gray-400/25 shadowguy bg-bg-gradient-to-b from-gray-700/90 to-gray-600 bg-gradient-to-r group hover:bg-gray-500'
+            className='transition-all border rounded-lg cursor-pointer border-gray-400/25 shadowguy bg-bg-gradient-to-b from-gray-900/95 to-gray-700 bg-gradient-to-r group hover:bg-gray-500'
           >
+            
 
 
 
@@ -25,7 +26,7 @@ export default function Builds() {
                 alt='Summary image'
               />
             </div>
-            <div className='flex flex-col gap-1 p-2'>
+            <div className='flex flex-col gap-1 p-2 '>
               <p className='text-lg text-slate-100 font-sfprodisplayregular'>
                 {item.title}
                 <span className='invisible ml-2 transition-opacity group-hover:visible'>
