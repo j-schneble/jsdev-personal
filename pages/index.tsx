@@ -27,6 +27,7 @@ const Home: NextPage = () => {
 
            <h1 className='text-3xl font-semibold text-black indent-1 font-sfprodisplaylight'>  Jack Schneble </h1>
         </div>
+        
         <div className='flex flex-col indent-0.5 text-left text-md border-gray-300/25 pl-2  border-l-2 font-sfprodisplayregular gap-2 text-gray-800'>
           <p>
            A developer that believes in discovering the &quot;why.&quot; As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create 
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
     
         </div>
         </header>
-      
+        
 
 
        <div className='flex flex-col gap-2 mt-12 '>

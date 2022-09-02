@@ -2,7 +2,18 @@ import React from 'react'
 import { useState } from 'react'
 import Footer from '../Footer/index'
 import { Transition } from '@headlessui/react'
+import {
+  Box,
+ 
+  Heading,
+  FormControl,
+  FormLabel,
+  Button,
+  Input,
 
+  useToast
+  
+} from "@chakra-ui/react";
 import splitbee from '@splitbee/web'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 
@@ -15,6 +26,17 @@ import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 import NavMenu from '../NavMenu/index'
 
 import { cn } from '../../lib/classNames'
+
+
+
+import Popup from 'reactjs-popup';
+
+import useInView from 'react-cool-inview'
+import { init } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+
+import type { NextPage } from 'next'
+import NextLink from 'next/link'
 
 
 interface IContainerProps {
@@ -59,6 +81,60 @@ export default function Container({
     props,
   }
   splitbee.init()
+
+  const { observe, inView } = useInView({
+    unobserveOnEnter: true,
+  })
+  init("KhAEHk-gFA5ArVOho");
+
+  const toast = useToast();
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const clearInput = () => {
+      setName('');
+      setEmail('');
+      setMessage('');
+      setIsLoading(false);
+  }
+
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+      e.preventDefault();
+
+      setIsLoading(true);
+
+      emailjs.send("service_042wmpe","template_y0wbbdl", {
+          from_name: name,
+          from_email: email,
+          message: message,
+      }).then((result) => {
+          clearInput();
+
+          toast({
+              title: 'Email sent.',
+              description: 'You had successfully sent the email. I will reply your email ASAP. Thank you!',
+              status: 'success',
+              duration: 9000,
+              isClosable: true
+          })
+
+      }, (error) => {
+          clearInput();
+
+          toast({
+              title: 'Email not sent.',
+              description: error.text,
+              status: 'error',
+              duration: 9000,
+              isClosable: true
+          })
+      });
+  }
+
 
   return (
     <>
@@ -132,25 +208,118 @@ export default function Container({
               </div>
             )}
             {!projectsNav && (
-              <div className='flex flex-row items-center space-x-4 '>
+              <div className='flex flex-row mr-1 space-x-4 item-center '>
+                
+               
+                <Popup trigger={ 
+                  <button>
+                         <p className='w-6 h-6 text-xl'>
+                                 💬
+                            </p>
+                  </button>}
+                  >
+                  <Box mt={4} marginRight={10} pr={8}  my={4} className='pop'    textAlign="left">
+            
+                                      <form  onSubmit={handleSubmit}>
+                                        
+                                        <div className='flex mr-10 '>
+                                          
+                                      <div className='grid grid-cols-1 gap-1 p-4 mb-2 mr-6'>
+                                      <p className='items-center tracking-wide text-center qk font-md '>Quick Message</p>
+                                          <FormControl mr={10}  className='space' >
+                                              <FormLabel  textColor={'black'}   fontFamily='sfprodisplayregular' key={'name'}></FormLabel>
+                                              <Input
+                                                  id='name'
+                                                  type={'text'}
+                                                  className='typing2'
+                                                  value={name}
+                                                  placeholder="Name"
+                                                  marginRight={1}
+                                                  borderRadius={'6px'}
+                                                  size="sm"
+                                                 
+                                                  width={'95%'}
+                                                  onChange={event => setName(event.currentTarget.value)}
+                                                  backgroundColor={'gray.50'}
+                                                  
+                                              />
+                                             
+                                          </FormControl>
+      
+                                          <FormControl className='space' ml={1}  mt={6}>
+                                              <FormLabel  textColor={'black'} ml={1}  fontFamily='sfprodisplayregular' key={'email'}></FormLabel>
+                                              <Input
+                                                  id='email'
+                                                  className='typing2'
+                                                  type={'email'}
+                                                  value={email}
+                                                  placeholder='Email'
+                                                  marginRight={1}
+                                                  size="sm"
+                                                  borderRadius={'6px'}
+                                                  width={'95%'}
+                                                  onChange={event => setEmail(event.currentTarget.value)}
+                                                  backgroundColor={'gray.100'}
+                                              />
+                                          </FormControl>
+                                          <FormControl className='space'  mt={6}>
+                                              <FormLabel  textColor={'black'} p={4}   fontFamily='sfprodisplayregular' key={'message'}></FormLabel>
+                                              <Input
+                                                  id='message'
+                                                  className='typing2'
+                                                  type={'text'}
+                                                  value={message}
+                                                  placeholder="Type your message..."
+                                                  borderRadius={'6px'}
+                                                  size="lg"
+                                                 
+                                                  marginLeft={2}
+                                                  width={'100%'}
+                                                  onChange={event => setMessage(event.currentTarget.value)}
+                                                  backgroundColor={'gray.50'}
+                                              />
+                                          </FormControl>
+                                          <Button
+                                              variant="solid"
+                                              type="submit"
+                                              width="full"
+                                              
+                                              
+                                             
+                                              isLoading={isLoading}
+                                              loadingText='Sending'  
+                                              textColor={'white'}
+                                              className='qkmsg'
+    
+                                          >
+                                              Send ➤
+                                          </Button>
+                                          </div>
+                                          </div>
+                                      </form>
+                                  </Box>
+                </Popup>
                 <a
-                  href='https://www.linkedin.com/in/jack-schneble'
-                  className='visible'
+                  href='www.linkedin.com/in/jackaschneble'
+                  className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
                   aria-label='Twitter'
                 >
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current lit2 text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
+                
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-gray-300 hover:text-opacity-100' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
-                  className='visible'
+                  className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current lit2 text-indigo-50 dark:text-gray-600 dark:hover:text-opacity-100 hover:text-opacity-100' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-gray-300 hover:text-opacity-100' />
                 </a>
+               
+                
               </div>
             )}
             

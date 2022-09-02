@@ -54,7 +54,8 @@ export default function Document() {
           content='/static/favicons/browserconfig.xml'
           name='msapplication-config'
         />{' '}
-
+  
+              
       </Head>
       <body>
         <Main />
