@@ -11,7 +11,7 @@ const SocialIcons = ({ children, href, label }: SocialIconsProps): JSX.Element =
   return (
     <Tooltip label={label}>
       <chakra.button
-        bg={useColorModeValue(`gray.800`, `gray.300`)}
+        bg={useColorModeValue(`black`, `black`)}
         rounded='full'
         p={10}
         my={8}
@@ -23,7 +23,7 @@ const SocialIcons = ({ children, href, label }: SocialIconsProps): JSX.Element =
         justifyContent='center'
         transition='background 0.3s ease'
         _hover={{
-          bg: useColorModeValue(`blackAlpha.200`, `whiteAlpha.200`),
+          bg: useColorModeValue(`gray.900`, `gray.900`),
         }}
       >
         <VisuallyHidden>{label}</VisuallyHidden>

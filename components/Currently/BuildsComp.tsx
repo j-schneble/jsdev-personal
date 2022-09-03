@@ -29,7 +29,7 @@ export default function Builds() {
             <div className='flex flex-col gap-1 p-1 '>
               <div className='flex flex-row ml-1 text-lg text-white font-sfprodisplayregular'>
                 {item.title} 
-                <span className='ml-3 transition-opacity text-slate-50'>
+                <span className='pt-1 ml-3 transition-opacity text-slate-50'>
                 <HiOutlineExternalLink />
                 </span>
               </div>

@@ -21,7 +21,7 @@ import { DarkMode, useColorMode, useColorModeValue } from '@chakra-ui/react'
           <div className="flex items-center flex-grow space-x-4">
             
           <a
-                  href='https://www.linkedin.com/in/jack-schneble'
+                  href='www.linkedin.com/in/jackaschneble'
                   className='visible'
                   target='_blank'
                   rel='noreferrer'
