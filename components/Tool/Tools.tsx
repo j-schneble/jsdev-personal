@@ -25,7 +25,7 @@ export default function Tool({
       target='_blank'
       rel='noopener noreferrer'
     >
-      <div className='flex w-9/12 p-2 ml-1 rounded-md bg-bg-gradient-to-b from-gray-900/95 to-gray-700 bg-gradient-to-r'>
+      <div className='flex w-9/12 p-2 ml-2 bg-gray-900 border rounded-md shadow-sm shadow-gray-800 '>
       <div className='pr-1'>{icon}</div>
       <div className='pr-1'>
         <h2 className=' font-sfprodisplaytext'>{name}</h2>

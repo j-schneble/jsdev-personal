@@ -82,58 +82,6 @@ export default function Container({
   }
   splitbee.init()
 
-  const { observe, inView } = useInView({
-    unobserveOnEnter: true,
-  })
-  init("KhAEHk-gFA5ArVOho");
-
-  const toast = useToast();
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-
-  const clearInput = () => {
-      setName('');
-      setEmail('');
-      setMessage('');
-      setIsLoading(false);
-  }
-
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-
-      setIsLoading(true);
-
-      emailjs.send("service_042wmpe","template_y0wbbdl", {
-          from_name: name,
-          from_email: email,
-          message: message,
-      }).then((result) => {
-          clearInput();
-
-          toast({
-              title: 'Email sent.',
-              description: 'You had successfully sent the email. I will reply your email ASAP. Thank you!',
-              status: 'success',
-              duration: 9000,
-              isClosable: true
-          })
-
-      }, (error) => {
-          clearInput();
-
-          toast({
-              title: 'Email not sent.',
-              description: error.text,
-              status: 'error',
-              duration: 9000,
-              isClosable: true
-          })
-      });
-  }
 
 
   return (
@@ -211,94 +159,7 @@ export default function Container({
               <div className='flex flex-row mr-1 space-x-4 item-center '>
                 
                
-                <Popup trigger={ 
-                  <button>
-                         <p className='w-6 h-6 text-xl'>
-                                 💬
-                            </p>
-                  </button>}
-                  >
-                  <Box mt={4} marginRight={10} pr={8}  my={4} className='pop'    textAlign="left">
-            
-                                      <form  onSubmit={handleSubmit}>
-                                        
-                                        <div className='flex mr-10 '>
-                                          
-                                      <div className='grid grid-cols-1 gap-1 p-4 mb-2 mr-6'>
-                                      <p className='items-center tracking-wide text-center qk font-md '>Quick Message</p>
-                                          <FormControl mr={10}  className='space' >
-                                              <FormLabel  textColor={'black'}   fontFamily='sfprodisplayregular' key={'name'}></FormLabel>
-                                              <Input
-                                                  id='name'
-                                                  type={'text'}
-                                                  className='typing2'
-                                                  value={name}
-                                                  placeholder="Name"
-                                                  marginRight={1}
-                                                  borderRadius={'6px'}
-                                                  size="sm"
-                                                 
-                                                  width={'95%'}
-                                                  onChange={event => setName(event.currentTarget.value)}
-                                                  backgroundColor={'gray.50'}
-                                                  
-                                              />
-                                             
-                                          </FormControl>
-      
-                                          <FormControl className='space' ml={1}  mt={6}>
-                                              <FormLabel  textColor={'black'} ml={1}  fontFamily='sfprodisplayregular' key={'email'}></FormLabel>
-                                              <Input
-                                                  id='email'
-                                                  className='typing2'
-                                                  type={'email'}
-                                                  value={email}
-                                                  placeholder='Email'
-                                                  marginRight={1}
-                                                  size="sm"
-                                                  borderRadius={'6px'}
-                                                  width={'95%'}
-                                                  onChange={event => setEmail(event.currentTarget.value)}
-                                                  backgroundColor={'gray.100'}
-                                              />
-                                          </FormControl>
-                                          <FormControl className='space'  mt={6}>
-                                              <FormLabel  textColor={'black'} p={4}   fontFamily='sfprodisplayregular' key={'message'}></FormLabel>
-                                              <Input
-                                                  id='message'
-                                                  className='typing2'
-                                                  type={'text'}
-                                                  value={message}
-                                                  placeholder="Type your message..."
-                                                  borderRadius={'6px'}
-                                                  size="lg"
-                                                 
-                                                  marginLeft={2}
-                                                  width={'100%'}
-                                                  onChange={event => setMessage(event.currentTarget.value)}
-                                                  backgroundColor={'gray.50'}
-                                              />
-                                          </FormControl>
-                                          <Button
-                                              variant="solid"
-                                              type="submit"
-                                              width="full"
-                                              
-                                              
-                                             
-                                              isLoading={isLoading}
-                                              loadingText='Sending'  
-                                              textColor={'white'}
-                                              className='qkmsg'
-    
-                                          >
-                                              Send ➤
-                                          </Button>
-                                          </div>
-                                          </div>
-                                      </form>
-                                  </Box>
-                </Popup>
+                
                 <a
                   href='www.linkedin.com/in/jackaschneble'
                   className='visible lit2'
@@ -307,7 +168,7 @@ export default function Container({
                   aria-label='Twitter'
                 >
                 
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-gray-300 hover:text-opacity-100' />
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-900/95 dark:hover:text-gray-300 hover:text-opacity-100' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
@@ -316,7 +177,7 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-600 dark:hover:text-gray-300 hover:text-opacity-100' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-900/95 dark:hover:text-gray-300 hover:text-opacity-100' />
                 </a>
                
                 

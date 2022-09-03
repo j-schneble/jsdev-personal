@@ -6,6 +6,8 @@ export const buildsList = [
       img: '/images/tweeter.png',
       title: 'Recreating Twitter',
       description: 'A Twitter clone using, React and Tailwind. Currently is just a front end app using real embedded tweets from a demo twitter account I created. The plan is to add a db and use the Twitter API.',
+      stack1: ' React.js ',
+      stack2: 'Tailwind',
       link: 'https://github.com/j-schneble/react-tweeter',
       source: 'https;//github.com/j-schneble/'
  
@@ -14,6 +16,8 @@ export const buildsList = [
       img: '/images/tl.png',
       title: 'Tallowhill Home Services',
       description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
+      stack1: ' Next.js ',
+      stack2: ' Chakra UI ',
       link: 'https://github.com/j-schneble/tallowhill-homeimprove',
       source: 'https;//github.com/j-schneble/'
  

@@ -1,17 +1,39 @@
 import type { NextPage } from 'next'
 import NextLink from 'next/link'
-import { Grid, Text, Link,  Button } from '@chakra-ui/react'
+import React from 'react'
+import { useState } from 'react'
+import { 
+  Grid, 
+  Text, 
+  Link, 
+  Box, 
+  Button, 
+  useToast,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+   } from '@chakra-ui/react'
 import Tool from '../components/Tool/Tools'
 import { ToolBox } from '../data/tools/toolBox'
 import Container from '../components/Container/index'
 import Builds from '../components/Currently/index'
 import  Footer  from '../components/Footer/index'
-import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon, ChatIcon } from '@chakra-ui/icons'
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
+import {FiMessageSquare } from 'react-icons/fi'
+import { BiMessageSquareAdd } from 'react-icons/bi'
+import Popup from 'reactjs-popup';
+import { BsChatText} from 'react-icons/bs'
+import useInView from 'react-cool-inview'
+import { init } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import { AiOutlineExport } from "react-icons/ai";
 
 
 const Home: NextPage = () => {
+
 
   
   return (
@@ -19,23 +41,22 @@ const Home: NextPage = () => {
 
    
     <Container>
-      <header className='flex flex-col gap-3'>
-        <div className='flex items-center gap-4'>
-          
-
-        
-
-           <h1 className='text-3xl font-semibold text-black indent-1 font-sfprodisplaylight'>  Jack Schneble </h1>
-        </div>
-        
-        <div className='flex flex-col indent-0.5 text-left text-md border-gray-300/25 pl-2  border-l-2 font-sfprodisplayregular gap-2 text-gray-800'>
+      <header className='flex flex-col gap-3 '>
+        <div className='flex items-center gap-4'>  
+    
+           <h1 className='text-3xl font-semibold text-black indent-1 font-sfprodisplaylight'>  Jack Schneble   </h1>
+   
+</div>       
+         
+   
+        <div className='flex flex-col indent-0.5 text-left text-md border-gray-300/25 pl-2  border-l-2 font-sfprodisplayregular  text-gray-800'>
           <p>
            A developer that believes in discovering the &quot;why.&quot; As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create 
                 efficient and beautiful software. 
           </p>
          
-    
-        </div>
+          </div> 
+       
         </header>
         
 
@@ -73,14 +94,14 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <h2 className='mt-10 text-2xl text-black font-semiboldfont-sfprodisplaylight'>Recent</h2>
+      <h2 className='mt-10 text-2xl font-semibold text-black font-sfprodisplaylight'>Recent</h2>
       
         <Text className="mt-1 text-md indent-0.5 font-sfprodisplayregular text-gray-800">
                Projects that I am working on below, check out the repositories to stay updated. 
         </Text>              
    <NextLink href="/projects"  passHref scroll={false}>
         
-            <Link className='flex font-sfprodisplaylight indent-0.5 text-gray-700' >View my completed builds here {''} <ChevronRightIcon className='w-6 h-6 text-pink3' /></Link> 
+            <Link className='flex font-sfprodisplaylight indent-0.5 text-gray-700' >View my completed builds here {''} <AiOutlineExport className='w-6 h-6 pl-1 text-gray-900' /></Link> 
             </NextLink>
           <div className='mt-4'>
              <Builds />

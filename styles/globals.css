@@ -223,7 +223,7 @@
   }
 
   .button-primary-y {
-    @apply flex items-center justify-center flex-none px-2 py-2 space-x-2 font-semibold leading-none text-gray-600 border-2 rounded-md shadow-sm cursor-pointer shadow-gray-800 dark:text-gray-300 hover:text-gray-1000 dark:bg-gray-100 dark:hover:text-white dark:hover:border-opacity-50 ;
+    @apply flex items-center justify-center flex-none px-2 py-2 space-x-2 font-semibold leading-none text-gray-600 border rounded-md shadow-sm cursor-pointer shadow-gray-800 dark:text-gray-300 hover:text-gray-1000 dark:bg-gray-100 dark:hover:text-white dark:hover:border-opacity-50 ;
    
 
 
@@ -972,4 +972,87 @@
     flex-wrap: wrap;
 
   
+}
+.boxform {
+  padding: 4px;
+}
+.ttt {
+  margin-top: 6px;
+}
+.qkm {
+  font-family: 'sfprodisplayregular';
+  padding: 2px;
+  text-align: center;
+  font-size: larger;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  color:#ffffff;
+  
+}
+
+.twotx {
+  gap: 4px;
+  background-color: rgba(176, 181, 187, 0.131);
+  padding: 4px;
+  margin-bottom: 2px;
+  backdrop-filter: blur(18px);
+  margin-left: 8px;
+ 
+  align-items: center;
+ 
+  border-radius: 4px;
+
+  width:95%;
+}
+
+
+.finalbtn {
+  font-family: 'sfprodisplayregular';
+  color:rgb(255, 255, 255);
+  padding: 4px;
+  width:100%;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff10;
+}
+.finalbtn:hover {
+  background-color: #ffffff;
+  color:#000000;
+  border-radius: 4px;
+ 
+
+}
+
+.threetx {
+
+  background-color: rgba(176, 181, 187, 0.131);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  align-items: center;
+  margin-left: 8px;
+  border-radius: 4px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  width:95%;
+  backdrop-filter: blur(18px);
+ 
+}
+.popu {
+  content:'';
+ height: 195px;
+ width:280px;
+ margin-top: 12px;
+ margin-right:16px;
+  border-radius: 6px;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(18px);
+ padding: 10px;
+ border: 2px solid rgba(189, 196, 205, 0.87);
+ box-shadow: 0 8px 10px 0 rgb(0,0,0,.06);
+ 
+}
+
+.top2 {
+  width: 90%;
+  padding: 2px;
 }
