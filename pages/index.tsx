@@ -29,7 +29,7 @@ import { BsChatText} from 'react-icons/bs'
 import useInView from 'react-cool-inview'
 import { init } from '@emailjs/browser';
 import emailjs from '@emailjs/browser';
-import { AiOutlineExport } from "react-icons/ai";
+import { BsBoxArrowRight } from "react-icons/bs";
 import {ImSpinner9 } from'react-icons/im';
 
 
@@ -102,7 +102,7 @@ Tools and technologies I have been using on a regular basis.
         </Text>              
    <NextLink href="/projects"  passHref scroll={false}>
         
-            <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' >View my completed builds here {''} <AiOutlineExport className='w-6 pl-1 text-gray-900 h-7' /></Link> 
+            <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' >View my completed builds here {''} <BsBoxArrowRight className='w-6 pl-1 text-gray-900 h-7' /></Link> 
             </NextLink>
           <div className='mt-4'>
              <Builds />

@@ -2,7 +2,11 @@ import Image from 'next/image'
 
 import Parallax from '../Parallax/index'
 import { buildsList } from '../../data/currently/buildsItems'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { BsBoxArrowInUpRight } from 'react-icons/bs'
+
+
+
+
 export default function Builds() {
   return (
     <div className='flex flex-col gap-4'>
@@ -30,7 +34,7 @@ export default function Builds() {
               <div className='flex flex-row ml-1 text-lg text-white font-sfprodisplayregular'>
                 {item.title} 
                 <span className='pt-1 ml-3 transition-opacity text-slate-50'>
-                <HiOutlineExternalLink />
+                <BsBoxArrowInUpRight />
                 </span>
               </div>
               </div>
