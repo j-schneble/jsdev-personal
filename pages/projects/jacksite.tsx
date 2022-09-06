@@ -12,7 +12,7 @@ import {
   useToast
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import Tilt from 'react-tilt'
+
 import {MdWorkspacesOutline } from 'react-icons/md'
 
 const Jacksite = () => {
@@ -30,7 +30,7 @@ const Jacksite = () => {
                 </p>             
                 </div>               
           </div>
-          <Tilt className=" Tilt" options={{ max: 25 }}>
+         
         <div className="grid grid-cols-2 gap-2">
         
        
@@ -67,7 +67,7 @@ const Jacksite = () => {
                 />   
                 </div>   
                 </div>  
-          </Tilt>
+        
 
     
        
