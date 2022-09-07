@@ -16,6 +16,7 @@ import {
    
     SiThreedotjs,
     SiTailwindcss,
+    SiTypescript
   
   } from 'react-icons/si'
 
@@ -25,13 +26,15 @@ interface Tool {
   url: string
   icon?: React.ReactNode
 }
-
-interface Build {
+interface Tallow {
   name: string
  
   url: string
   icon?: React.ReactNode
 }
+
+
+
 
 export const ToolBox: Tool[] = [
       {
@@ -67,25 +70,23 @@ export const ToolBox: Tool[] = [
 ]
 
 
-export const BuildBox: Build[] = [
-  {
-    name: 'React.js',
-    icon: <FaReact />,
-    url: "https://javascript.com/",
-  },
+export const ProjectBox: Tallow[] = [
   {
     name: 'Next.js',
     icon: <SiNextdotjs />,
     url: "https://javascript.com/",
   },
   {
-    name: 'Chakra',
-    icon: <SiChakraui />,
+    name: 'Typescript',
+    icon: <SiTypescript />,
     url: "https://javascript.com/",
   },
   {
-    name: 'TailwindCSS',
+    name: 'Tailwind',
     icon: <SiTailwindcss />,
-    url: "https://javascript.com/"
+    url: "https://javascript.com/",
   },
+
 ]
+
+

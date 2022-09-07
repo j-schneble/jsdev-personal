@@ -29,6 +29,7 @@
     "react-cool-inview": "^2.0.9",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-parallax-tilt": "^1.7.62",
     "react-tilt": "^0.1.4",
     "react-typist": "^2.0.5",
     "reactjs-popup": "^2.0.5",

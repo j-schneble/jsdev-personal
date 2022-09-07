@@ -963,6 +963,47 @@
   left: -25px;
 }
 */
+@media (max-width: 671px) {
+input[type=checkbox] {
+  display:none
+}
+}
+@media (max-width: 671px) {
+.check img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+}
+@media (max-width: 671px) {
+  input[type=checkbox]:checked ~ Label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+}
+
+
+@media (max-width: 671px) {
+	.reverse-columns {
+		display: flex;
+		flex-direction: column-reverse;
+    transform: none;
+    transition: none;
+    align-items: center;
+    justify-items: center;
+    
+	}
+}
+
+@media (max-width: 671px) {
+  .rev-col {
+    width: 75%;
+    height: 75%;
+   align-items: center;
+   
+   
+  }
+}
 
 .contain {
 
@@ -1066,6 +1107,54 @@
   /* ease | ease-in | ease-out | linear */
   transition: transform ease-in-out 0.3s;
 }
+@media (max-width: 671px) {
+	.zoomA {
+		transition: none;
+	}
+}
  
 /* (C) ZOOM ON HOVER */
-.zoomA:hover { transform: scale(1.2); }
+.zoomA:hover { transform: scale(1.5); }
+
+@media (max-width: 671px) {
+  .zoomA:hover { transform: none;}
+}
+@media (max-width: 671px) {
+  .Tilt {
+     transform: none;
+     transition: none;
+    
+  }
+}
+@media (max-width: 671px) {
+  react-parallax-tilt {
+     display:none;
+   
+     
+  }
+}
+
+@media (max-width: 671px) {
+  .mob-w {
+    margin-right: 11px;
+  }
+}
+
+
+@media (max-width: 671px) {
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+}
+
+@media (max-width: 671px) {
+  .smsize {
+    margin-right: 4px;
+  }
+}
+
+.projbtn:hover {
+  opacity: 50%;
+
+}
