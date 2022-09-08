@@ -32,6 +32,12 @@ interface Tallow {
   url: string
   icon?: React.ReactNode
 }
+interface Selfintro {
+  name: string
+ 
+  url: string
+  icon?: React.ReactNode
+}
 
 
 
@@ -87,6 +93,29 @@ export const ProjectBox: Tallow[] = [
     url: "https://javascript.com/",
   },
 
+]
+
+export const ProjectBox1: Selfintro[] = [
+  {
+    name: 'Next.js',
+    icon: <SiNextdotjs />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Typescript',
+    icon: <SiTypescript />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Three.js',
+    icon: <SiThreedotjs />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Chakra',
+    icon: <SiChakraui />,
+    url: "https://javascript.com/",
+  }
 ]
 
 

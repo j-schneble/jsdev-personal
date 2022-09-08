@@ -100,7 +100,7 @@ Tools and technologies I have been using on a regular basis.
         <Text className="mt-1 text-md indent-0.5  font-sfprodisplaylight text-gray-800">
                Projects that I am working on below, check out the repositories to stay updated. 
         </Text>              
-   <NextLink href="/projects"  passHref scroll={false}>
+   <NextLink href="projects/selfintro"  passHref scroll={false}>
         
             <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' >View my completed builds here {''} <BsBoxArrowRight className='w-6 pl-1 text-gray-900 h-7' /></Link> 
             </NextLink>
