@@ -30,7 +30,7 @@ import useInView from 'react-cool-inview'
 import { init } from '@emailjs/browser';
 import emailjs from '@emailjs/browser';
 import { BsBoxArrowRight } from "react-icons/bs";
-import {ImSpinner9 } from'react-icons/im';
+import {ImSpinner9, ImCog } from'react-icons/im';
 
 
 const Home: NextPage = () => {
@@ -59,11 +59,17 @@ const Home: NextPage = () => {
           </div> 
        
         </header>
+        <div className='flex flex-col gap-2 mt-12 '>
+        <h1 className='mb-1 text-lg font-light text-black font-sfprodisplaylight'><ImSpinner9/></h1>
+        <p className='flex flex-col indent-0.5   text-left text-md  font-sfprodisplaylight  text-gray-800'>
+          I build web applications and websites that are efficient, well-designed, and performant. Main focuses are accessibility, performance, and clean code. I help my clients create the best possible digital products for their businesses. I dont just develop websites and apps, I make them beautiful, fast and accessible to all. 
+        </p>
+        </div>
         
 
 
        <div className='flex flex-col gap-2 mt-12 '>
-        <h1 className='text-lg font-light text-black font-sfprodisplaylight'><ImSpinner9/></h1>
+        <h1 className='text-lg font-light text-black font-sfprodisplaylight'><ImCog/></h1>
         <div className='flex flex-col gap-2 '>
           
           <p className="text-md indent-0.2  font-sfprodisplaylight  text-gray-800 ">
