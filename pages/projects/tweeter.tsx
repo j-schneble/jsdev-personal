@@ -1,4 +1,3 @@
-
 import Container from '../../components/Container'
 import {
   Box,
@@ -12,11 +11,11 @@ import { TwitterBox } from '../../data/tools/toolBox'
 
 const Tweeter = () => {
     return (
-        <Container>
-            <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-600/75'>
-                <Box >
+        <Container className='overflow-none overscroll-y-none overflow-y-none over'>
+            <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-900/75'>
+                <Box className='p-2 gla'>
                     <div className='flex flex-col gap-2'>
-                        <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
+                        <Heading className="mt-5 mb-4 ml-2 text-2xl leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                             Tweeter
                         </Heading>
                     </div>
@@ -50,7 +49,7 @@ const Tweeter = () => {
           </div>
         </div> 
 
-        <div className='flex flex-col gap-3 mt-4'>
+        <div className='flex flex-col gap-3 mt-4 '>
 
         <p
             className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm italic font-sfprodisplaylight  text-red-600'>
@@ -95,3 +94,7 @@ const Tweeter = () => {
 }
 
 export default Tweeter
+
+
+
+
