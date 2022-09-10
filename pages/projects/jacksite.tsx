@@ -16,7 +16,7 @@ const Jacksite = () => {
       <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-900/75'>
           <Box className=' gla'>
               <div className='flex flex-col gap-2'>
-                <Heading className="mt-5 mb-4 ml-2 text-2xl  leading-none tracking-wider text-left text-white font-sfprodisplayregular">
+                <Heading className="mt-5 mb-4 ml-2 text-2xl leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                     Tallowhill Home Services
                 </Heading>
                              
@@ -26,7 +26,7 @@ const Jacksite = () => {
         <div className="flex items-center">    
             <div className='mb-2 ml-3 mob-w'>                         
               <Image               
-              src='/images/th/th1.png'
+              src='/images/tallowbetter.png'
               objectFit='cover' 
               className="border rounded-md shadow-sm zoomA shadow-gray-800" 
               alt='mysite'       

@@ -18,7 +18,7 @@ export const builds: CurrentProject[] = [
  
       name: 'Tallowhill Home Services',
       description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
-      image_path: '/images/tl.png',
+      image_path: '/images/tallowbetter.png',
  
       deployed_url: '/projects/jacksite',
       source_url: 'https://github.com/j-schneble/js-personal'
@@ -41,7 +41,7 @@ export const builds: CurrentProject[] = [
       name: "Tallowhill Home Services",
       description:
       "A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind.",
-      image_path: '/images/tl.png',
+      image_path: '/images/tallowbetter.png',
       deployed_url: '/projects/jacksite',
       source_url: 'https://github.com/j-schneble/tallowhill-homeimprove'
     
