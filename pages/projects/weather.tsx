@@ -33,17 +33,17 @@ const Weather = () => {
                     </div>
                     </div>
                     <div className='flex items-center justify-center gap-6 mt-2 mb-6 '>
-          <div className='w-4/12 px-1 py-1 text-center bg-black border rounded shadow-sm projbtn'>
+          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded shadow-sm projbtn'>
             <Link href='https://github.com/j-schneble/weather-forecast-app'>
-            <a className='font-bold text-white cursor-pointer font-sfprodisplayregular'>
+            <a className='font-bold text-black cursor-pointer font-sfprodisplayregular'>
                     Source
                   </a>
             </Link>
           </div>
 
-          <div className='w-4/12 px-1 py-1 text-center bg-black border rounded shadow-sm projbtn'>
+          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded shadow-sm projbtn'>
             <Link href='https://jacks-forecast.vercel.app/'>
-            <a className='font-bold text-white cursor-pointer font-sfprodisplayregular'>
+            <a className='font-bold text-black cursor-pointer font-sfprodisplayregular'>
                     Demo
                   </a>
             </Link>
