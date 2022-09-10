@@ -1,33 +1,27 @@
 import { IProject } from '../../types';
+import { CurrentProject } from '../../types'
 
-export interface buildsList{
-  img: string;
-  title: string;
-  
-  descript: string;
- link: string;
-  stack: string[];
-}
 
-export const buildsList = [
+
+export const builds: CurrentProject[] = [
     {
-      img: '/images/tweeter.png',
-      title: 'Recreating Twitter',
+     
+      name: 'Recreating Twitter',
       description: 'A Twitter clone using, React and Tailwind. Currently is just a front end app using real embedded tweets from a demo twitter account I created. The plan is to add a db and use the Twitter API.',
-      stack: ['ReactJS',  'Tailwind'],
+      image_path: '/images/tweeter.png',
     
-      link: 'https://github.com/j-schneble/react-tweeter',
-      source: 'https;//github.com/j-schneble/'
+      deployed_url: '/projects/tweeter',
+      source_url: 'https://github.com/j-schneble/js-personal'
  
     },
     {
-      img: '/images/tl.png',
-      title: 'Tallowhill Home Services',
-      description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
-      stack: ['NextJS',  'ChakraUI'],
  
-      link: 'https://github.com/j-schneble/tallowhill-homeimprove',
-      source: 'https;//github.com/j-schneble/'
+      name: 'Tallowhill Home Services',
+      description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
+      image_path: '/images/tl.png',
+ 
+      deployed_url: '/projects/jacksite',
+      source_url: 'https://github.com/j-schneble/js-personal'
  
     },
   
@@ -37,8 +31,8 @@ export const buildsList = [
       name: "Personal Site",
       description:
       "Personal developer site, built using Nextjs, Typescript, Chakra-UI, Framer-Motion and some Tailwind to make it look nice.",
-      image_path: '/images/another.png',
-      deployed_url: 'https://jackschneble.com',
+      image_path: '/images/jsio.png',
+      deployed_url: '/projects/personalsite',
       source_url: 'https://github.com/j-schneble/js-personal'
      
     
@@ -48,7 +42,7 @@ export const buildsList = [
       description:
       "A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind.",
       image_path: '/images/tl.png',
-      deployed_url: 'https://tallowhill.vercel.app/',
+      deployed_url: '/projects/jacksite',
       source_url: 'https://github.com/j-schneble/tallowhill-homeimprove'
     
     
@@ -59,7 +53,7 @@ export const buildsList = [
       description:
       "A self-introducing home page. When using the correct hot key, a terminal will share an intro about myself.",
       image_path: '/images/js1.png',
-      deployed_url: 'https://self-intro-seven.vercel.app/',
+      deployed_url: '/projects/selfintro',
       source_url: 'https://github.com/j-schneble/self-intro'
      
   
@@ -67,7 +61,7 @@ export const buildsList = [
     {
       name: "Jacks Forecast",
       image_path: '/images/miami.png',
-      deployed_url: "https://jacks-forecast.vercel.app/",
+      deployed_url: '/projects/weather',
       description:
       "A weather application that allows you to access current weather data for any location.",
       source_url: 'https://github.com/j-schneble/weather-forecast-app'
@@ -75,7 +69,7 @@ export const buildsList = [
     {
       name: "3js Bio Link",
       image_path: '/images/bio-3js.png',
-      deployed_url: "https://biolink-3js.vercel.app/",
+      deployed_url: '/projects/3jsbiolink',
       description:
       "A links page for social media. Includes a link to my github and a personal site, and then messed around with 3js. ",
       source_url: 'https://github.com/j-schneble/biolink-3js'
@@ -85,7 +79,7 @@ export const buildsList = [
     {
       name: "iNote",
       image_path: '/images/savednote.png',
-      deployed_url: "https://notes-app-rho-five.vercel.app/",
+      deployed_url: '/projects/inote',
       description:
       "A notes application, created to store ideas or personal messages",
       source_url: 'https://github.com/j-schneble/Application-Project'
@@ -94,7 +88,7 @@ export const buildsList = [
     {
       name: "Facebook Clone",
       image_path: '/images/fb.png',
-      deployed_url: 'https://nxt-facebook.vercel.app/',
+      deployed_url: '/projects/facebook',
       description: 'A Facebook clone created using login authentication, Firebase, Nextjs, and Tailwind. ',
       source_url: 'https://github.com/j-schneble/nxt-facebook'
     },
@@ -102,7 +96,7 @@ export const buildsList = [
     {
       name: "iChat v1",
       image_path: '/images/iChatv1.png',
-      deployed_url: "https://chat-app-pi-six.vercel.app/",
+      deployed_url: '/projects/ichatv1',
       description:
       "The first version of iChat. A real time chat application with chat rooms",
       source_url: 'https://github.com/j-schneble/Chatroom-App'
@@ -112,7 +106,7 @@ export const buildsList = [
     {
       name: "iChat v2",
       image_path: '/images/ichatanon.png',
-      deployed_url: "https://chatroom-app-2.vercel.app/",
+      deployed_url: '/projects/ichatv2',
       description:
       "An upgraded and more secure version of my chatroom application (iChat).",
       source_url: 'https://github.com/j-schneble/Chatroom-App-v2-'

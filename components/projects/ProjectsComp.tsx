@@ -1,8 +1,10 @@
 import Image from 'next/image'
-
+import NextLink from 'next/link'
 import Parallax from '../Parallax/index'
 import { projects } from '../../data/currently/buildsItems'
 import { IoLogoGithub } from 'react-icons/io'
+import { Link, } from '@chakra-ui/react'
+import { IoMdArrowRoundForward  } from 'react-icons/io'
 
 export default function ProjectComp() {
   return (
@@ -24,33 +26,16 @@ export default function ProjectComp() {
               />
             </div>
             <div className='flex flex-row gap-6 p-1 mt-1'>
-              <p className='text-xl font-semi-bold text-slate-100 font-sfprodisplayregular'>
+              <p className='pb-1 ml-1 text-xl font-semi-bold text-slate-100 font-sfprodisplayregular'>
                 {project.name}
                 </p>
-                <a
-                  onClick={() => window.open(project.deployed_url, '_blank')}
-                  className='px-1 text-lg rounded-full ring-1 ring-indigo-300'
-                  target='_blank'
-                  rel='noreferrer'
-                  aria-label='Github'
-                >
-                    🚀
-                    </a>
-                
-                <a
-                  onClick={() => window.open(project.source_url, '_blank')}
-                  className='visible '
-                  target='_blank'
-                  rel='noreferrer'
-                  aria-label='Github'
-                >
-                  <IoLogoGithub className='w-8 ml-1 text-white transition-all duration-200 fill-current h-7 hover:text-opacity-100' />
-                </a>
+                <NextLink href={project.deployed_url}  passHref scroll={false}>       
+            <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' > {''} <IoMdArrowRoundForward className='w-6 pl-1 text-white h-7' /></Link> 
+            </NextLink>
+               
                
                 </div>
-                <div className='flex pb-1 pl-1 mt-1'>
-              <p className=' text-slate-100/80 text-md font-sfprodisplaylight'>{project.description}</p>
-              </div>
+              
         </div>
         </Parallax>
       ))}

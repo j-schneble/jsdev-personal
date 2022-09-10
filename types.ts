@@ -10,4 +10,14 @@ export interface IProject {
    
  
   }
+
+  export interface CurrentProject {
+    name: string;
+    description: string;
+    image_path: string;
+    deployed_url: string;
+   source_url: string;
+   
+ 
+  }
   

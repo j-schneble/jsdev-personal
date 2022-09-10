@@ -6,30 +6,15 @@ import {
   Grid, 
   Text, 
   Link, 
-  Box, 
-  Button, 
-  useToast,
-  Heading,
-  FormControl,
-  FormLabel,
-  Input,
+
    } from '@chakra-ui/react'
 import Tool from '../components/Tool/Tools'
 import { ToolBox } from '../data/tools/toolBox'
 import Container from '../components/Container/index'
 import Builds from '../components/Currently/index'
-import  Footer  from '../components/Footer/index'
-import { ChevronRightIcon, ExternalLinkIcon, ChatIcon } from '@chakra-ui/icons'
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import {FiMessageSquare } from 'react-icons/fi'
-import { BiMessageSquareAdd } from 'react-icons/bi'
-import Popup from 'reactjs-popup';
-import { BsChatText} from 'react-icons/bs'
-import useInView from 'react-cool-inview'
-import { init } from '@emailjs/browser';
-import emailjs from '@emailjs/browser';
-import { BsBoxArrowRight } from "react-icons/bs";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 import {ImSpinner9, ImCog } from'react-icons/im';
 
 
@@ -50,7 +35,7 @@ const Home: NextPage = () => {
 </div>       
          
    
-        <div className='flex flex-col indent-0.5  text-left text-md  font-sfprodisplaylight  text-gray-800'>
+        <div className='flex flex-col text-left text-gray-800 text-md font-sfprodisplaylight'>
           <p>
            A developer that believes in discovering the &quot;why.&quot; As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create 
                 efficient and beautiful software. 
@@ -59,17 +44,17 @@ const Home: NextPage = () => {
           </div> 
        
         </header>
-        <div className='flex flex-col gap-2 mt-12 '>
-        <h1 className='mb-1 text-lg font-light text-black font-sfprodisplaylight'><ImSpinner9/></h1>
-        <p className='flex flex-col indent-0.5   text-left text-md  font-sfprodisplaylight  text-gray-800'>
-          I build web applications and websites that are efficient, well-designed, and performant. Main focuses are accessibility, performance, and clean code. I help my clients create the best possible digital products for their businesses. I dont just develop websites and apps, I make them beautiful, fast and accessible to all. 
+        <div className='flex flex-col gap-2 mt-4 '>
+       
+        <p className='flex flex-col text-left text-gray-800 text-md font-sfprodisplaylight'>
+          I build web applications and websites that are efficient, well-designed, and performant. I help my clients create the best possible digital products for their businesses. I dont just develop websites and apps, I make them beautiful, fast and accessible to all. 
         </p>
         </div>
         
 
 
        <div className='flex flex-col gap-2 mt-12 '>
-        <h1 className='text-lg font-light text-black font-sfprodisplaylight'><ImCog/></h1>
+        <h1 className='text-lg font-light text-black font-sfprodisplaylight'><ImSpinner9/></h1>
         <div className='flex flex-col gap-2 '>
           
           <p className="text-md indent-0.2  font-sfprodisplaylight  text-gray-800 ">
@@ -103,10 +88,10 @@ Tools and technologies I have been using on a regular basis.
 
       <h2 className='mt-10 text-2xl text-black font-sfprodisplayregular'>Recent</h2>
         <Text className="mt-1 text-md indent-0.5  font-sfprodisplaylight text-gray-800">
-               Projects that I am working on below, check out the repositories to stay updated. 
+               Projects that I am working on below
         </Text>              
    <NextLink href="/projects"  passHref scroll={false}>       
-            <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' >View my completed builds here {''} <BsBoxArrowRight className='w-6 pl-1 text-gray-900 h-7' /></Link> 
+            <Link className='flex  text-md indent-0.5  font-sfprodisplaylight text-gray-800' >View my completed builds here {''} <BsBoxArrowInUpRight className='w-6 pl-1 text-gray-900 h-7' /></Link> 
             </NextLink>
           <div className='mt-4'>
              <Builds />

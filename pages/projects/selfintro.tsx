@@ -1,22 +1,12 @@
-import useInView from 'react-cool-inview'
+
 import Container from '../../components/Container'
 import {
   Box,
-  FormControl,
-  FormLabel,
-  Button,
   Image,
-  Input,
   Heading,
-  Divider,
   Link,
-  Flex,
-  useToast
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
-import Tilt from 'react-parallax-tilt'
-import {MdWorkspacesOutline } from 'react-icons/md'
-import {ImSpinner9 } from'react-icons/im';
+import React from 'react';
 import Selfintrotool from '../../components/ProjectTools/Selfintrotools'
 import { ProjectBox1 } from '../../data/tools/toolBox'
 
@@ -57,10 +47,39 @@ const Selfintro = () => {
                   </a>
             </Link>
           </div>
-        </div>  
+        </div> 
+        <div className='flex flex-col gap-3 mt-4'>
 
-        <div className='grid grid-cols-3 '>
-      
+          <p
+
+          className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+              This project was created when building a personal site. I originally wanted to include some type of Three.js animation or have something different in the site. I created this terminal utilizing hot keys but did not want it apart of my personal site, therefore I kept it as its own application. 
+          </p>      
+          <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+              A main focus with having multiple services was to work on my efficiency with Typescript, while testing my creativeness throughout the process.  
+          </p> 
+
+          </div>   
+
+        <div className='grid grid-cols-2 grid-rows-2 gap-2 ml-1'>
+          {/* Lazy */}
+            {ProjectBox1.sort((a, b) => {
+              if (a.name < b.name) {
+                return -1
+              }
+              if (a.name > b.name) {
+                return 1
+              }
+              return 0
+            }).map(selfintrotool => (
+              <Selfintrotool
+              
+                icon={selfintrotool.icon}
+                key={selfintrotool.name}
+                name={selfintrotool.name}
+                url={selfintrotool.url}
+              />
+            ))}
           </div>
                 </Box>
                 
