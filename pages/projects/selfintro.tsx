@@ -13,7 +13,7 @@ import { ProjectBox1 } from '../../data/tools/toolBox'
 const Selfintro = () => {
     return (
         <Container>
-            <div className='px-2 py-2 rounded-md shadow-md bg-gray-900 shadow-gray-600/75'>
+            <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-600/75'>
                 <Box>
                     <div>
                 <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
@@ -55,9 +55,7 @@ const Selfintro = () => {
           className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
               This project was created when building a personal site. I originally wanted to include some type of Three.js animation or have something different in the site. I created this terminal utilizing hot keys but did not want it apart of my personal site, therefore I kept it as its own application. 
           </p>      
-          <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
-              A main focus with having multiple services was to work on my efficiency with Typescript, while testing my creativeness throughout the process.  
-          </p> 
+       
 
           </div>   
 
