@@ -14,7 +14,7 @@ const ichatv1 = () => {
     return (
       <Container className='overflow-none overscroll-y-none overflow-y-none over'>
       <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-900/75'>
-          <Box className='p-2 gla'>
+          <Box className=' gla'>
               <div className='flex flex-col gap-2'>
                         <Heading className="mt-5 mb-4 ml-2 text-2xl  leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                             iChat
