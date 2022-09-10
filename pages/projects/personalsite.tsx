@@ -12,10 +12,10 @@ import { PersonalBox } from '../../data/tools/toolBox'
 const Personal = () => {
     return(
         <Container>
-             <div className='px-2 py-2 rounded-md shadow-md shadow-gray-600/75'>
+             <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-600/75'>
             <Box >
                 <div className='flex flex-col gap-2'>
-                <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-black font-sfprodisplaybold">
+                <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
                     Schneble.io
                 </Heading>
                              
@@ -57,10 +57,10 @@ const Personal = () => {
 
           <p
 
-          className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+          className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
               This is my personal site I created to showcase my work and share who I am.
           </p>      
-          <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+          <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
              I chose to build this mainly with Typescript because I wanted to become more comfortable with it. ChakraUI was also incorporated because it allows a site to flow well and enhances the UI. 
           </p> 
 

@@ -110,33 +110,33 @@ interface Personal{
 
 export const ToolBox: Tool[] = [
       {
-        name: 'React.js',
-        icon: <FaReact />,
-        url: "https://javascript.com/",
-      },   
+        name: 'Chakra',
+        icon: <SiChakraui />,
+        url: "https://chakra-ui.com/",
+      },  
       { name: 'Three.js',
         icon: <SiThreedotjs />,
-        url: "https://javascript.com/",
+        url: "https://threejs.org/",
       },
       {
         name: 'Firebase',
         icon: <SiFirebase />,
-        url: "https://javascript.com/",
+        url: "https://firebase.google.com/",
       },
       {
-        name: 'Chakra',
-        icon: <SiChakraui />,
-        url: "https://javascript.com/",
-      },
+        name: 'Typescript',
+        icon: <SiTypescript />,
+        url: "https://www.typescriptlang.org/",
+      }, 
       {
         name: 'Github',
         icon: <SiGit />,
-        url: "https://javascript.com/",
+        url: "https://github.com/j-schneble",
       },
       {
         name: 'Next.js',
         icon: <SiNextdotjs />,
-        url: "https://javascript.com/",
+        url: "https://nextjs.org/",
       },
     
 ]

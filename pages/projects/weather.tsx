@@ -13,10 +13,10 @@ import { WeatherBox } from '../../data/tools/toolBox'
 const Weather = () => {
     return (
        <Container>
-        <div className='px-2 py-2 rounded-md shadow-md shadow-gray-600/75'>
+        <div className='px-2 py-2 rounded-md bg-gray-900 shadow-md shadow-gray-600/75'>
             <Box>
                 <div>
-                    <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-black font-sfprodisplaybold">
+                    <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
                             Weather 
                     </Heading>
 
@@ -52,11 +52,11 @@ const Weather = () => {
         <div className='flex flex-col gap-3 mt-4'>
 
         
-        <p className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+        <p className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
         A weather app I created using  the Current Weather data API from openweather.org (Not mobile ready)
         </p> 
         <p
-        className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+        className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
             This project was created based on the idea of working on API implementation within Next.js. I was also curious about light and dark mode switches with images.
         </p> 
 

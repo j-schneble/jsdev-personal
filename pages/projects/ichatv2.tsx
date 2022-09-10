@@ -13,10 +13,10 @@ import { ChatBox2 } from '../../data/tools/toolBox'
 const ichatv2 = () => {
     return (
         <Container>
-            <div className='px-2 py-2 rounded-md shadow-md shadow-gray-600/75'>
+            <div className='px-2 py-2 rounded-md shadow-md bg-gray-900 shadow-gray-600/75'>
                 <Box>
                     <div className='flex flex-col gap-2'>
-                        <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-black font-sfprodisplaybold">
+                        <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
                             iChatv2
                         </Heading>
                     </div>
@@ -53,10 +53,10 @@ const ichatv2 = () => {
 
         <p
 
-        className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+        className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
         iChatv2 is an upgraded and more secure version of iChat.
         </p>      
-        <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+        <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
             I wanted more secure login authentication with iChat rather than joining immediately and being in a chatroom. Even with a username creation it is still basically anonymous, there I added Okta authentication.
         </p> 
 

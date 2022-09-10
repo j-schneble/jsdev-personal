@@ -26,9 +26,9 @@ export default function Personaltools({
       rel='noopener noreferrer'
     >
       <div className='flex w-5/12 '>
-      <div className='text-xl text-black'>{icon}</div>
+      <div className='text-xl text-white'>{icon}</div>
       <div className='p-1'>
-        <h2 className='font-bold text-black font-sfprodisplayregular'>{name}</h2>
+        <h2 className='font-bold text-white font-sfprodisplayregular'>{name}</h2>
         </div>
       </div>
     </a>

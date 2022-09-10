@@ -13,10 +13,10 @@ import { FbBox } from '../../data/tools/toolBox'
 const facebook = () => {
     return (
         <Container>
-            <div>
+             <div className='px-2 py-2 rounded-md shadow-md bg-gray-900 shadow-gray-600/75'>
                 <Box>
-                    <div>
-                        <Heading>
+                    <div className='flex flex-col gap-2'>
+                        <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
                             Facebook Clone
                         </Heading>
                     </div>
@@ -51,10 +51,10 @@ const facebook = () => {
         <div className='flex flex-col gap-3 mt-4'>
 
             <p
-            className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+            className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
             A Facebook clone.
             </p>      
-            <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+            <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
             I originally wanted to see if I could make a full social media application but ended up seeing how well I could recreate facebook.
             </p> 
 

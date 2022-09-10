@@ -13,10 +13,10 @@ import { BioBox } from '../../data/tools/toolBox'
 const biolink = () => {
     return (
         <Container>
-            <div className='px-2 py-2 rounded-md shadow-md shadow-gray-600/75'>
+             <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-600/75'>
                 <Box>
-                    <div>
-                        <Heading  className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-black font-sfprodisplaybold">
+                    <div className='flex flex-col gap-2'>
+                        <Heading className="mt-5 mb-4 ml-2 text-2xl font-bold leading-none tracking-wider text-left text-white font-sfprodisplaybold">
                             3js Bio-link
                         </Heading>
                     </div>
@@ -51,10 +51,10 @@ const biolink = () => {
                             </div> 
 
                     <div className='flex flex-col gap-3 mt-4'>
-                        <p  className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-black'>
+                        <p  className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
                         Most profiles on social media have a links page that showcase their websites link etc. I chose to create my own and wanted it to be different so I added a 3d wave animation. 
                         </p>      
-                        <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-black'>
+                        <p className='flex text-left rounded-md tracking-wide indent-0.5 px-2 mb-8  text-sm  font-sfprodisplayregular  text-white'>
                         Creating the 3d wave itself was the most difficult part and choosing where it will show on the page and keeping it symmetrical. The links however were simple and were going to be my other socials and possible my own website which had not been created yet at the time.
                         </p> 
 
