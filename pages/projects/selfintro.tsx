@@ -52,14 +52,14 @@ const Selfintro = () => {
 
           <p
 
-          className='flex text-left pt-1 tracking-wide rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
+          className='flex text-left pt-1 tracking-wide mb-1 rounded-md indent-0.5 px-2 text-sm   font-sfprodisplayregular  text-white'>
               This project was created when building a personal site. I originally wanted to include some type of Three.js animation or have something different in the site. I created this terminal utilizing hot keys but did not want it apart of my personal site, therefore I kept it as its own application. 
           </p>      
        
 
           </div>   
 
-        <div className='grid grid-cols-2 grid-rows-2 gap-2 ml-1'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-2 mt-2 ml-1'>
           {/* Lazy */}
             {ProjectBox1.sort((a, b) => {
               if (a.name < b.name) {
