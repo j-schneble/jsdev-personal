@@ -135,7 +135,7 @@ export default function Container({
                
                 
                 <a
-                  href='www.linkedin.com/in/jackaschneble'
+                  href='www.linkedin.com/in/johnaschneble'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
