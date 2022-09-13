@@ -1,8 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-
-
-
-
 import useInView from 'react-cool-inview'
 import Container from '../components/Container/index'
 import {

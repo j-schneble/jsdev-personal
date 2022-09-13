@@ -12,8 +12,7 @@ import Tool from '../components/Tool/Tools'
 import { ToolBox } from '../data/tools/toolBox'
 import Container from '../components/Container/index'
 import Builds from '../components/Currently/index'
-import Typist from "react-typist";
-import "react-typist/dist/Typist.css";
+
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import {ImSpinner9, ImCog } from'react-icons/im';
 

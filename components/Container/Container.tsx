@@ -2,41 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import Footer from '../Footer/index'
 import { Transition } from '@headlessui/react'
-import {
-  Box,
- 
-  Heading,
-  FormControl,
-  FormLabel,
-  Button,
-  Input,
-
-  useToast
-  
-} from "@chakra-ui/react";
 import splitbee from '@splitbee/web'
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
-
 import NavMenu from '../NavMenu/index'
-
 import { cn } from '../../lib/classNames'
 
-
-
-import Popup from 'reactjs-popup';
-
-import useInView from 'react-cool-inview'
-import { init } from '@emailjs/browser';
-import emailjs from '@emailjs/browser';
-
-import type { NextPage } from 'next'
-import NextLink from 'next/link'
 
 
 interface IContainerProps {
