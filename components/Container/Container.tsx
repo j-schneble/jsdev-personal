@@ -131,9 +131,6 @@ export default function Container({
             )}
             {!projectsNav && (
               <div className='flex flex-row mr-1 space-x-4 item-center '>
-                
-               
-                
                 <a
                   href='www.linkedin.com/in/johnaschneble'
                   className='visible lit2'
@@ -152,9 +149,7 @@ export default function Container({
                   aria-label='Github'
                 >
                   <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-900/95 dark:hover:text-gray-300 hover:text-opacity-100' />
-                </a>
-               
-                
+                </a>    
               </div>
             )}
             
