@@ -125,7 +125,6 @@ export default function Container({
                     {projectsNav}
                   </a>
                 </Link>
-              
                
               </div>
             )}
