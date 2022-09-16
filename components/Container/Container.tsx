@@ -118,7 +118,6 @@ export default function Container({
                     Projects
                   </a>
                 </Link>
-               
                 <span>/</span>
                 <Link href={`/projects/${projectsNav}`}>
                   <a className='transition-all cursor-pointer hover:text-primary'>
