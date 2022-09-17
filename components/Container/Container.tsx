@@ -129,7 +129,7 @@ export default function Container({
             {!projectsNav && (
               <div className='flex flex-row mr-1 space-x-4 item-center '>
                 <a
-                  href='www.linkedin.com/in/johnaschneble'
+                  href='https://linkedin.com/in/johnaschneble'
                   className='visible lit2'
                   target='_blank'
                   rel='noreferrer'
