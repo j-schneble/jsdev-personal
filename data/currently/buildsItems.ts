@@ -4,25 +4,19 @@ import { CurrentProject } from '../../types'
 
 
 export const builds: CurrentProject[] = [
-    {
-     
+    {    
       name: 'Recreating Twitter',
       description: 'A Twitter clone using, React and Tailwind. Currently is just a front end app using real embedded tweets from a demo twitter account I created. The plan is to add a db and use the Twitter API.',
-      image_path: '/images/tweeter.png',
-    
+      image_path: '/images/tweeter.png',   
       deployed_url: '/projects/tweeter',
-      source_url: 'https://github.com/j-schneble/js-personal'
- 
+      source_url: 'https://github.com/j-schneble/js-personal' 
     },
-    {
- 
+    { 
       name: 'Tallowhill Home Services',
       description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
       image_path: '/images/tallowbetter.png',
- 
       deployed_url: '/projects/jacksite',
-      source_url: 'https://github.com/j-schneble/js-personal'
- 
+      source_url: 'https://github.com/j-schneble/js-personal' 
     },
   
   ]
