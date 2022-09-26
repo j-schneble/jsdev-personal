@@ -136,7 +136,7 @@ export default function Container({
                   aria-label='Twitter'
                 >
                 
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-900/95 dark:hover:text-gray-300 hover:text-opacity-100' />
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-white dark:hover:text-opacity-50' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
@@ -145,7 +145,7 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-gray-900/95 dark:hover:text-gray-300 hover:text-opacity-100' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-white dark:hover:text-opacity-50 ' />
                 </a>    
               </div>
             )}

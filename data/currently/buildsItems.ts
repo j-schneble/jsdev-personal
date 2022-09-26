@@ -12,11 +12,11 @@ export const builds: CurrentProject[] = [
       source_url: 'https://github.com/j-schneble/js-personal' 
     },
     { 
-      name: 'Tallowhill Home Services',
-      description: 'A demo home improvement / handyman site. Working on efficiency and UI skills. Using Nextjs, Chakra UI, and Tailwind. ',
-      image_path: '/images/tallowbetter.png',
-      deployed_url: '/projects/jacksite',
-      source_url: 'https://github.com/j-schneble/js-personal' 
+      name: 'Prime Services',
+      description: 'An Excavation and Landscaping company located in Pennsylvania. ',
+      image_path: '/images/prime2.png',
+      deployed_url: 'https://pr-service.vercel.app/',
+      source_url: 'https://pr-service.vercel.app/' 
     },
   
   ]

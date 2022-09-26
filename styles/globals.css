@@ -223,7 +223,7 @@
   }
 
   .button-primary-y {
-    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-gray-900 border rounded shadow-sm cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-900 dark:hover:text-white dark:hover:border-opacity-50 ;
+    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-white border rounded shadow-sm cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-1000/95 dark:hover:text-opacity-75 dark:hover:border-opacity-50 ;
    
 
 
@@ -524,7 +524,7 @@
   }
   .bt {
     border: 1px solid #ffffffb8;
-    background: rgba(62, 62, 62, 0.814);
+    background: rgba(0, 0, 0, 0.814);
     backdrop-filter: blur(10px);
     
     
@@ -849,10 +849,12 @@
 .contain .card {
   position: relative;
   width: 450px;
-  height: 450px;
-  display: flex;
+  height: 300px;
+  margin-top: 8rem;
+  display: relative;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0);
 
  
 }
@@ -861,23 +863,23 @@
   position: absolute;
   display: block;
 
-  top: 50%; 
+  top: 0%; 
   left: 0px;
   width: 100%;
   height: 100%;
   text-decoration: none;
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
   border-radius: 8px;
 }
 .card::after {
   content:'';
   position: absolute;
   display: block;
-  top: 50%; 
+  top: 0%; 
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0);
   border-radius: 8px;
  
   filter: blur(10px);
@@ -904,21 +906,21 @@
 .card span {
   display: block;
   position: absolute;
-  top: 50%; 
+  top: 0%; 
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 10;
   pointer-events: none;
 }
 .card span::before {
   content: "";
   position: absolute;
-  top: 50%; 
+  top: 0%; 
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   opacity: 0;
@@ -929,8 +931,8 @@
   z-index: 1;
   position: relative;
   left: 0;
-  top: 50%; 
-  background: rgba(255, 255, 255, 0.339);
+  top: 0%; 
+  background: rgba(0, 0, 0, 0.489);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   backdrop-filter: blur(10px);
@@ -940,9 +942,14 @@
   align-items: center;
   color: white;
 }
+.lit{
+
+  color: white;
+}
 
 .lit:hover{
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(35, 35, 35, 0.4);
+  color: white;
 }
 
 .lit2:hover{
@@ -950,7 +957,7 @@
 }
 
 .msgbtn {
-  background: rgba(62, 62, 62, 0.614);
+  background: rgba(0, 0, 0, 0.614);
  
 
   backdrop-filter: blur(10px);
@@ -966,7 +973,7 @@
  
 }
 .msgbtn:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.872);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
  
   backdrop-filter: blur(10px);

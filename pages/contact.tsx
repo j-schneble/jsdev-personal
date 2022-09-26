@@ -77,7 +77,7 @@ const Contact = () => {
     
     <Container className='overflow-none overscroll-y-none overflow-y-none over' >
 
-<Box className='mt-10'>
+<Box className='mt-10 '>
       <div className='contain'>
 
       <div className='card'>
@@ -89,7 +89,7 @@ const Contact = () => {
     
       <Box className='mt-1'> 
       <Heading 
-                className='pt-1 pb-1 pl-2 text-3xl text-black font-sfprodisplaybold'
+                className='pt-1 pb-1 pl-2 text-3xl text-white font-sfprodisplaybold'
               >
                 Let's get in touch ☑
                
@@ -97,16 +97,16 @@ const Contact = () => {
             </Box>
             <Box my={2}   textAlign="left">
 
-            <h2 className='pb-2 pl-3 text-gray-800 text-md font-sfprodisplaylight'>
+            <h2 className='pb-2 pl-3 text-white/80 text-md font-sfprodisplaylight'>
               Feel free to reach out anytime
             </h2>
    
         <form onSubmit={handleSubmit}>
 
           <FormControl  >
-            <div className='grid grid-cols-2 gap-1 mt-3 mb-2 ml-3 mr-3'>
+            <div className='grid grid-cols-2 gap-1 mt-5 mb-4 ml-3 mr-3'>
               <Box >
-                 <FormLabel className='pt-1 pb-1 pl-0.5 tracking-wide text-md  text-gray-900/90 font-sfprodisplayregular ' key={'name'}>Full Name </FormLabel>
+                 <FormLabel className='pt-1 pb-1 pl-0.5 tracking-wide text-md  text-white/90 font-sfprodisplayregular ' key={'name'}>Full Name </FormLabel>
                   <Input 
                     className='w-full py-1 pl-2 text-gray-800 rounded-sm shadow-xs lit bt'
                     id='name'
@@ -117,9 +117,9 @@ const Contact = () => {
                   />
               </Box>
             <Box>
-            <FormLabel className='pt-1 pb-2 pl-0.5 text-md tracking-wide text-gray-900/90 font-sfprodisplayregular'  key={'email'}>Email</FormLabel>
+            <FormLabel className='pt-1 pb-2 pl-0.5 text-md tracking-wide text-white/90 font-sfprodisplayregular'  key={'email'}>Email</FormLabel>
             <Input 
-              className='w-full py-1 pl-2 text-gray-800 rounded-sm shadow-xs lit bt'
+              className='w-full py-1 pl-2 text-white rounded-sm shadow-xs lit bt'
               id='email'
               type={'email'}
               value={email}
@@ -131,7 +131,7 @@ const Contact = () => {
         </FormControl>
       <FormControl className='ml-3 mr-3' >
       <FormLabel 
-        className='pt-1 pb-1 pl-1 tracking-wide text-gray-900/90 text-md font-sfprodisplayregular' 
+        className='pt-1 pb-1 pl-1 tracking-wide text-white/90 text-md font-sfprodisplayregular' 
         htmlFor="message" key={'message'}>
         Message
       
@@ -147,7 +147,7 @@ const Contact = () => {
       </FormControl>
       <FormControl>
       <Button 
-        className='w-full px-2 py-2 mt-5 msgbtn'
+        className='w-full px-2 py-2 mt-8 msgbtn'
         marginLeft={'1'}
         marginRight={'1'}
         variant="solid"
@@ -157,7 +157,7 @@ const Contact = () => {
         isLoading={isLoading}
         loadingText='Sending'                                            
       >
-        <p className='font-semibold tracking-wider text-gray-50 font-sfprodisplayregular'>
+        <p className='font-semibold tracking-wider text-white font-sfprodisplayregular'>
         Send Message 
         </p>
      

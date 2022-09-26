@@ -9,12 +9,12 @@ import NextLink from 'next/link'
 
 export default function Builds() {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-4 '>
     {builds.map((item, key) => (
       <Parallax key={key}>
         <div
          
-          className='transition-all bg-gray-900 border border-gray-500 rounded-lg cursor-pointer shadowguy group hover:bg-gray-700'
+          className='z-30 transition-all rounded-sm cursor-pointer ring-1 ring-white/50 bg-black/90 group hover:text-black/90'
         >
           <div className='h-52 w-20% relative'>
             <Image
@@ -26,8 +26,8 @@ export default function Builds() {
               alt='Summary image'
             />
           </div>
-          <div className='flex flex-row gap-6 p-1 mt-1'>
-            <p className='pb-1 ml-1 text-xl font-semi-bold text-slate-100 font-sfprodisplayregular'>
+          <div className='flex flex-row gap-6 p-1 mt-1 bg-transparent '>
+            <p className='pb-1 ml-1 text-xl text-white font-semi-bold font-sfprodisplayregular'>
               {item.name}
               </p>
               <NextLink href={item.deployed_url}  passHref scroll={false}>       

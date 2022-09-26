@@ -13,8 +13,8 @@ import { FbBox } from '../../data/tools/toolBox'
 const facebook = () => {
     return (
       <Container className='overflow-none overscroll-y-none overflow-y-none over'>
-      <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-900/75'>
-          <Box className=' gla'>
+      <div className='px-2 py-1 rounded-sm shadow-2xl ring ring-white/25 bg-gray-1000/75 filter-blur shadow-gray-900 '>
+          <Box className=''>
               <div className='flex flex-col gap-2'>
                         <Heading className="mt-5 mb-4 ml-2 text-2xl  leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                             Facebook Clone

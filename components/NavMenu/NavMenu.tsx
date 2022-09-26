@@ -241,7 +241,7 @@ import React, {
       >
         <Dialog
           onClose={setIsOpen}
-          className={cn('fixed inset-0 z-10', 'p-4 pt-[20vh] overflow-y-auto')}
+          className={cn('fixed inset-0 z-20', 'p-4 pt-[20vh] overflow-y-auto')}
         >
           <Transition.Child
             enter='duration-100 ease-out'

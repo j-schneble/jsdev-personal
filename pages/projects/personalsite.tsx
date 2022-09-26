@@ -12,15 +12,15 @@ import { PersonalBox } from '../../data/tools/toolBox'
 const Personal = () => {
     return(
       <Container className='overflow-none overscroll-y-none overflow-y-none over'>
-      <div className='px-2 py-2 bg-gray-900 rounded-md shadow-md shadow-gray-900/75'>
-          <Box className=' gla'>
+      <div className='px-2 py-1 rounded-sm shadow-2xl ring ring-white/25 bg-gray-1000/75 filter-blur shadow-gray-900 '>
+          <Box className=''>
               <div className='flex flex-col gap-2'>
-                <Heading className="mt-5 mb-4 ml-2 text-2xl  leading-none tracking-wider text-left text-white font-sfprodisplayregular">
+                <Heading className="mt-5 mb-4 ml-2 text-2xl leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                     Schneble.io
                 </Heading>
                              
             </div>
-         
+
               
         <div className="flex items-center">    
             <div className='mb-2 ml-3 mob-w'>                         
@@ -35,17 +35,17 @@ const Personal = () => {
        
 
         <div className='flex items-center justify-center gap-6 mt-2 mb-6 '>
-          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded shadow-sm projbtn'>
+          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded-sm shadow-sm projbtn'>
             <Link href='https://github.com/j-schneble/schneble.io'>
-            <a className='font-bold text-black cursor-pointer font-sfprodisplayregular'>
+            <a className='font-bold text-gray-800 cursor-pointer font-sfprodisplayregular'>
                     Source
                   </a>
             </Link>
           </div>
 
-          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded shadow-sm projbtn'>
+          <div className='w-4/12 px-1 py-1 text-center bg-white border rounded-sm shadow-sm projbtn'>
             <Link href='https://schneble.io/'>
-            <a className='font-bold text-black cursor-pointer font-sfprodisplayregular'>
+            <a className='font-bold text-gray-800 cursor-pointer font-sfprodisplayregular'>
                     Demo
                   </a>
             </Link>
@@ -89,7 +89,7 @@ const Personal = () => {
       
           </Box>
           </div>
-
+  
         </Container>
     )
 }

@@ -16,14 +16,14 @@ const Projects = () => {
   /* ProjectCard still works if implemented, Created Projects Comp to work on Parallax */
 
   return (
-    <Container >
+    <Container  >
      
-      <h1 className='flex p-2 text-lg text-black font-sfprodisplayregular'>  Constantly looking for a new way to understand and create, I am always working on 
+      <h1 className='flex p-2 text-lg text-whitefont-sfprodisplayregular'>  Constantly looking for a new way to understand and create, I am always working on 
                 new projects.  </h1>
     
              <NextLink href="https://www.github.com/j-schneble"  passHref scroll={false}>
         
-            <Link className='flex p-1 pb-4 mb-8 text-lg text-gray-800 indent-2 font-sfprodisplaylight' > Check out more on my Github {''} <BsBoxArrowInUpRight className='w-6 h-6 pt-1 pl-1 text-gray-900' /></Link> 
+            <Link className='flex p-1 pb-4 mb-8 text-lg text-white/80 indent-2 font-sfprodisplaylight' > Check out more on my Github {''} <BsBoxArrowInUpRight className='w-6 h-6 pt-1 pl-1 text-white' /></Link> 
             </NextLink>
       <div className='col-span-12 sm:col-span-6 lg:col-span-6 '>
       

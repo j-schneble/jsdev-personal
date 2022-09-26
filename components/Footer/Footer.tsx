@@ -27,7 +27,7 @@ import { DarkMode, useColorMode, useColorModeValue } from '@chakra-ui/react'
                   rel='noreferrer'
                   aria-label='Twitter'
                 >
-                  <IoLogoLinkedin className='w-6 h-auto text-gray-500 transition-all duration-200 fill-current text-opacity-60 hover:text-opacity-100' />
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 fill-current text-white/50 hover:text-white/25' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
@@ -36,11 +36,11 @@ import { DarkMode, useColorMode, useColorModeValue } from '@chakra-ui/react'
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto text-gray-500 transition-all duration-200 fill-current text-opacity-60 hover:text-opacity-100' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 fill-current text-white/50 hover:text-white/25' />
                 </a>
           </div>
         </div>
-        <p className='m-auto text-lg text-gray-500 font-sfprodisplayregular'
+        <p className='m-auto text-lg text-white/50 font-sfprodisplayregular'
             
           
       
