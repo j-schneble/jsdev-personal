@@ -17,7 +17,7 @@ export default function Tool({
     <a
       className={cn(
         'flex gap-5 space-between items-center',
-        'bg-dots text-center  place-content-center filter-blur',
+        'text-center   place-content-center filter-blur',
         'rounded-lg ',
         'cursor-pointer'
       )}
@@ -25,10 +25,12 @@ export default function Tool({
       target='_blank'
       rel='noopener noreferrer'
     >
-      <div className='flex items-center w-full p-2 text-center rounded shadow-sm shadow-white/50 place-content-center filter-blur bg-dots '>
+      <div className='bg-gradient-to-r pad w-8/12 from-[#7928ca] to-[#00bfff] place-content-evenly'>
+      <div className='flex items-center w-full p-1 text-center rounded ring-1 ring-black/50 bg-gray-1000/90 place-content-center filter-blur '>
       <div className='flex items-center pr-1 '>{icon}</div>
       <div className='pl-1'>
         <h2 className=' font-sfprodisplaytext'>{name}</h2>
+        </div>
         </div>
       </div>
     </a>

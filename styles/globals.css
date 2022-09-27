@@ -223,7 +223,7 @@
   }
 
   .button-primary-y {
-    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-white border rounded shadow-sm cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-1000/95 dark:hover:text-opacity-75 dark:hover:border-opacity-50 ;
+    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-white rounded cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-1000/95 dark:hover:text-opacity-75 dark:hover:border-opacity-50 ;
    
 
 
@@ -231,8 +231,8 @@
 
   .dark .bg-stickyy {
     
-    background-color: transparent; /* Just adjust the color or opacity to make the text pop! */
-    
+    background:transparent;
+
    
   }
 
@@ -523,10 +523,10 @@
     box-shadow: 0 6px 10px rgba(255, 255, 255, 0.08)
   }
   .bt {
-    border: 1px solid #ffffffb8;
-    background: rgba(0, 0, 0, 0.814);
+    border: 1px solid #ffffff5c;
+    background: rgba(0, 0, 0, 0.714);
     backdrop-filter: blur(10px);
-    
+    border-radius: 4px;
     
     box-shadow: 0 6px 10px rgba(255, 255, 255, 0.08)
   }
@@ -848,13 +848,12 @@
 
 .contain .card {
   position: relative;
-  width: 450px;
-  height: 300px;
+
   margin-top: 8rem;
   display: relative;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0);
+ 
 
  
 }
@@ -863,12 +862,9 @@
   position: absolute;
   display: block;
 
-  top: 0%; 
-  left: 0px;
-  width: 100%;
-  height: 100%;
+
   text-decoration: none;
-  background: rgba(255, 255, 255, 0);
+
   border-radius: 8px;
 }
 .card::after {
@@ -879,7 +875,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0);
+ 
   border-radius: 8px;
  
   filter: blur(10px);
@@ -920,7 +916,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0);
+
   backdrop-filter: blur(10px);
   border-radius: 10px;
   opacity: 0;
@@ -929,13 +925,10 @@
 
 .content {
   z-index: 1;
-  position: relative;
-  left: 0;
-  top: 0%; 
-  background: rgba(0, 0, 0, 0.489);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+
   border-radius: 10px;
-  backdrop-filter: blur(10px);
+
  
 
   justify-content: center;
@@ -957,15 +950,15 @@
 }
 
 .msgbtn {
-  background: rgba(0, 0, 0, 0.614);
+  background: rgba(0, 0, 0, 0.951);
  
 
-  backdrop-filter: blur(10px);
+
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid #ffffffb8;
- 
+border-radius: 4px;
+
   backdrop-filter: blur(20px);
   
   
@@ -973,13 +966,13 @@
  
 }
 .msgbtn:hover {
-  background: rgba(0, 0, 0, 0.872);
+  background: rgba(0, 0, 0, 0.249);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
  
   backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.574);
  
 }
 /*

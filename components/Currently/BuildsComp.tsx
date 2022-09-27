@@ -26,15 +26,16 @@ export default function Builds() {
               alt='Summary image'
             />
           </div>
-          <div className='flex flex-row gap-6 p-1 mt-1 bg-transparent '>
-            <p className='pb-1 ml-1 text-xl text-white font-semi-bold font-sfprodisplayregular'>
+          <div className='rounded bg-gradient-to-r pad from-[#7928ca] to-[#00bfff] place-content-evenly '>
+          <div className='flex flex-row gap-6 p-1 bg-gray-1000/90 '>
+          <NextLink href={item.deployed_url}  passHref scroll={false}> 
+            <Link className='pb-1 ml-1 text-xl text-white font-semi-bold font-sfprodisplayregular'>
               {item.name}
-              </p>
-              <NextLink href={item.deployed_url}  passHref scroll={false}>       
-          <Link className='flex font-sfprodisplayregular indent-0.5 text-gray-700' > {''} <IoMdArrowRoundForward className='w-6 pl-1 text-white h-7' /></Link> 
-          </NextLink>
+              </Link>
+              </NextLink>
+              
              
-             
+              </div>
               </div>
             
       </div>

@@ -78,12 +78,12 @@ const Contact = () => {
     <Container className='overflow-none overscroll-y-none overflow-y-none over' >
 
 <Box className='mt-10 '>
-      <div className='contain'>
+      <div className='contain bg-gradient-to-r pad from-[#7928ca] to-[#00bfff]'>
 
-      <div className='card'>
-   
+      <div className='w-full p-1 bg-gray-1000/90'>
 
-    <div className='content'>
+
+    <div className=''>
       
     
     

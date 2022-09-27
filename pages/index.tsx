@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
    
     <Container>
-      <header className='flex flex-col gap-3 '>
+          <header className='flex flex-col gap-3 '>
         <div className='flex items-center gap-4'>  
     
            <h1 className='text-3xl text-white indent-1 font-sfprodisplayregular'>  Jack Schneble   </h1>
@@ -50,8 +50,6 @@ const Home: NextPage = () => {
         </p>
         </div>
         
-
-
        <div className='flex flex-col gap-2 mt-12 '>
         <h1 className='text-lg font-light text-white font-sfprodisplaylight'><ImSpinner9/></h1>
         <div className='flex flex-col gap-2 '>
@@ -63,7 +61,11 @@ Tools and technologies I have been using on a regular basis.
 
         <div className="p-4">
 
-        <div className='grid grid-cols-2 gap-8 my-3 '>
+       
+          <div className='items-center text-center rounded p-[1] bg-transparent place-content-evenly'>
+            <div className='grid items-center grid-cols-2 gap-8 p-3 text-center rounded place-content-evenly'>
+
+    
           {/* Lazy */}
             {ToolBox.sort((a, b) => {
               if (a.name < b.name) {
@@ -81,6 +83,8 @@ Tools and technologies I have been using on a regular basis.
                 url={tool.url}
               />
             ))}
+                    </div>
+       
           </div>
         </div>
       </div>
@@ -93,6 +97,7 @@ Tools and technologies I have been using on a regular basis.
           <div className='mt-4'>
              <Builds />
              </div>
+             
          
   </Container>
 

@@ -91,14 +91,18 @@ export default function Container({
           leaveFrom='opacity-100 scale-100'
           leaveTo='opacity-0 scale-95'
         >
-          <nav className='sticky w-full  bg-stickyy dark:bg-stickyy  z-[1] top-2 md:top-4 max-w-2xl px-4 py-2 rounded-md mx-auto flex justify-between items-center'>
+   
+          <nav className=' sticky w-full  z-[1] top-2 md:top-4 max-w-2xl  rounded-md mx-auto flex justify-between items-center pad bg-stickyy dark:bg-transparent '>
+          <div className='sticky w-full top-2 md:top-4 max-w-2xl px-4 py-2 rounded-md mx-auto flex justify-between items-center   bg-transparent  z-[2] '>
+            <div className='bg-gradient-to-r rounded p-[1px] from-[#7928ca] to-[#00bfff]'>
             <button
-              className='text-2xl button-primary-y '
+              className='text-2xl button-primary-y'
               onClick={() => setIsOpen(!isOpen)}
             >
               
               ⌜⌟
             </button>
+            </div>
             {projectsNav && (
               <div className='flex flex-row gap-1 text-tertiary'>
                 <Link href='/'>
@@ -149,8 +153,9 @@ export default function Container({
                 </a>    
               </div>
             )}
-            
+            </div>
           </nav>
+          
         </Transition>
         <LazyMotion features={domAnimation}>
           <m.div

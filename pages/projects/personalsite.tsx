@@ -12,7 +12,8 @@ import { PersonalBox } from '../../data/tools/toolBox'
 const Personal = () => {
     return(
       <Container className='overflow-none overscroll-y-none overflow-y-none over'>
-      <div className='px-2 py-1 rounded-sm shadow-2xl ring ring-white/25 bg-gray-1000/75 filter-blur shadow-gray-900 '>
+        <div className='bg-gradient-to-r w-full rounded-sm pad from-[#7928ca] to-[#00bfff]'>
+      <div className='px-1 py-2 rounded-sm shadow-2xl ring-1 ring-white/25 bg-gray-1000/95 filter-blur shadow-gray-900 '>
           <Box className=''>
               <div className='flex flex-col gap-2'>
                 <Heading className="mt-5 mb-4 ml-2 text-2xl leading-none tracking-wider text-left text-white font-sfprodisplayregular">
@@ -89,7 +90,7 @@ const Personal = () => {
       
           </Box>
           </div>
-  
+  </div>
         </Container>
     )
 }

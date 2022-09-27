@@ -451,3 +451,50 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px rgba(255,255,255,0.3), inset 
 .projectdark {
   background-color: #0b0b0cec;
 }
+.litedot {
+  background: linear-gradient(90deg, #f9fafb 15px, transparent 1%) center,
+  linear-gradient(#f9fafb 15px, transparent 1%) center, rgba(0, 0, 0, 0.24);
+background-size: 16px 16px;
+
+}
+
+.bor{
+background: #03001e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fdeff971, #ec38bc75, #7403c06b, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdeff96c, #ec38bc75, #7403c059, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ;
+  -webkit-backdrop-filter: brightness(-0.5);
+  backdrop-filter: brightness(1);
+  border: 2px solid;
+}
+.borgpurp {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ 
+  margin: -5px;
+  border-radius: inherit;
+  border-image: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+
+}
+
+.bb {
+  padding: 2x;
+z-index: 40;
+overflow-x: hidden;
+box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.9);
+border: 1px solid black;
+background: linear-gradient(to right, rgba(48, 48, 48, 0.2), rgba(39, 39, 39, 0.2));
+box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+
+
+backdrop-filter: blur(30px);
+}
+
+.ww {
+  width: 38.5%
+}
+.pad {
+  padding:0.03rem
+}

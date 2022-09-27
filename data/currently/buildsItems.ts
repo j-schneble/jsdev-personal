@@ -46,7 +46,7 @@ export const builds: CurrentProject[] = [
       source_url: 'https://github.com/j-schneble/self-intro'
     },
     {
-      name: "Jacks Forecast",
+      name: "Forecast Application",
       image_path: '/images/miami.png',
       deployed_url: '/projects/weather',
       description:
