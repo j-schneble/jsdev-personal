@@ -26,7 +26,7 @@ export default function Tool({
       rel='noopener noreferrer'
     >
       <div className='bg-gradient-to-r pad w-10/12 from-[#7928ca] to-[#00bfff] place-content-evenly'>
-      <div className='flex items-center w-full p-1 text-center rounded ring-1 ring-black/50 bg-gray-1000/90 place-content-center filter-blur '>
+      <div className='flex items-center w-full p-1 text-center rounded ring-1 ring-black/50 bg-gray-1000 place-content-center filter-blur '>
       <div className='flex items-center pr-1 '>{icon}</div>
       <div className='pl-1'>
         <h2 className=' font-sfprodisplaytext'>{name}</h2>
