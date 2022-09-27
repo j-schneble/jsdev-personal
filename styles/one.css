@@ -439,7 +439,7 @@ box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px rgba(255,255,255,0.3), inset 
     backdrop-filter: blur(30px);
   }
 
-  .yesdots {
+  .dark .yesdots {
     background: linear-gradient(90deg, #101010 15px, transparent 1%) center,
       linear-gradient(#111111 15px, transparent 1%) center,
       rgba(255, 255, 255, 0.29);
@@ -497,4 +497,10 @@ backdrop-filter: blur(30px);
 }
 .pad {
   padding:0.03rem
+}
+.pad1 {
+  padding:0.07rem
+}
+.pad2 {
+  padding:0.035rem
 }
