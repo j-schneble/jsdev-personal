@@ -223,7 +223,7 @@
   }
 
   .button-primary-y {
-    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-white rounded cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-1000 dark:hover:text-opacity-75 dark:hover:border-opacity-50 ;
+    @apply flex items-center justify-center flex-none px-2 py-1 space-x-2 font-semibold leading-none text-white border rounded cursor-pointer shadow-gray-800 dark:text-gray-50 hover:text-gray-1000 dark:bg-gray-1000 dark:hover:text-opacity-75 dark:hover:border-opacity-50 ;
    
 
 

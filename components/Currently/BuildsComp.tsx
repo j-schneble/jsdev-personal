@@ -15,7 +15,7 @@ export default function Builds() {
         
         <div
          
-          className='z-30 transition-all rounded ring-1 ring-white/50cursor-pointer z-5 group hover:text-black/90'
+          className='transition-all rounded-sm cursor-pointer z-5 ring-1 ring-white/75 group hover:text-black/90'
         >
           <div className='h-52 w-20% relative'>
             <Image
@@ -27,8 +27,8 @@ export default function Builds() {
               alt='Summary image'
             />
           </div>
-          <div className='bg-gradient-to-r pad from-[#7928ca] to-[#00bfff] place-content-evenly '>
-          <div className='flex flex-row gap-6 p-2 bg-gray-1000/90 '>
+        
+          <div className='flex flex-row gap-6 p-1 rounded bg-gray-1000 '>
           <NextLink href={item.deployed_url}  passHref scroll={false}> 
             <Link className='pb-1 ml-1 text-xl text-white font-semi-bold font-sfprodisplayregular'>
               {item.name}
@@ -38,12 +38,9 @@ export default function Builds() {
              
               </div>
               </div>
-            
-      </div>
+
       </Parallax>
     ))}
   </div>
   )
 }
-
-
