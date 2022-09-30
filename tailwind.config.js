@@ -46,6 +46,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
         serif: ['Domine', ...fontFamily.serif],
+        sfprodisplayrounded: ['SF-Pro-Display-Rounded', ...fontFamily.sans],
         sfprodisplayregular: ['SF-Pro-Display-Regular', ...fontFamily.sans],
         sfprodisplaybold: ['SF-Pro-Display-Bold', ...fontFamily.sans],
         sfprodisplaylight: ['SF-Pro-Display-Light', ...fontFamily.sans],

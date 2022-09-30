@@ -7,6 +7,7 @@ const Tools = () => {
     <Container footer={false}>
       <div className='flex flex-col gap-6'>
         <h1 className='text-xl font-sfprodisplayregular'>Tech</h1>
+        </div>
         <div className='flex flex-col gap-2 text-secondary'>
           <p className="text-lg font-sfprodisplayregular">
           Some of the tools and technologies I have been using on a regular basis.
@@ -31,10 +32,12 @@ const Tools = () => {
         
               icon={tool.icon}
               url={tool.url}
+              exp={tool.exp}
+              exp1={tool.exp1}
             />
           ))}
         </div>
-      </div>
+
     </Container>
   )
 }

@@ -78,7 +78,7 @@ const Contact = () => {
     <Container className='overflow-none overscroll-y-none overflow-y-none over' >
 
 <Box className='mt-10 '>
-      <div className='contain bg-gradient-to-r pad from-[#7928ca] to-[#00bfffd3]'>
+      <div className='contain bg-gradient-to-r pad from-[#ffffff09] to-[#9b9b9b06]'>
 
       <div className='w-full p-1 rounded-md bg-gray-1000/95 '>
 

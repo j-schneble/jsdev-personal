@@ -32,6 +32,8 @@ interface Tool {
  
   url: string
   icon?: React.ReactNode
+  exp: string
+  exp1: string
 }
 interface Tallow {
   name: string
@@ -113,30 +115,37 @@ export const ToolBox: Tool[] = [
         name: 'Chakra',
         icon: <SiChakraui />,
         url: "https://chakra-ui.com/",
+        exp: 'UI design',
+        exp1: 'Build speed',
+       
       },  
-      { name: 'Three.js',
-        icon: <SiThreedotjs />,
-        url: "https://threejs.org/",
-      },
       {
         name: 'Firebase',
         icon: <SiFirebase />,
         url: "https://firebase.google.com/",
+        exp: 'Real-time db',
+        exp1: 'Cloud-based',
       },
       {
         name: 'Typescript',
         icon: <SiTypescript />,
         url: "https://www.typescriptlang.org/",
+        exp: 'Refactoring speed',
+        exp1: 'Static Typing',
       }, 
       {
         name: 'Github',
         icon: <SiGit />,
         url: "https://github.com/j-schneble",
+        exp: 'Code',
+        exp1: 'Collabortion',
       },
       {
         name: 'Next.js',
         icon: <SiNextdotjs />,
         url: "https://nextjs.org/",
+        exp: 'Auto code splitting',
+        exp1: 'Project management',
       },
     
 ]

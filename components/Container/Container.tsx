@@ -37,7 +37,7 @@ export default function Container({
   projectsNav = '',
   showNav = true,
   children,
-  title = 'Jack Schneble - Developer.',
+  title = 'js.',
   description = 'Develop.',
   image = '',
   date,
@@ -74,7 +74,7 @@ export default function Container({
          
           <meta name='robots' content='follow, index' />
           <meta property='og:type' content={meta.type} />
-          <meta property='og:site_name' content='Jack Schneble' />
+          <meta property='og:site_name' content='js.' />
           <meta property='og:description' content={meta.description} />
           <meta name='ogdescription' content={meta.description} />
           <meta name='og:image' content={meta.image} />
@@ -92,11 +92,11 @@ export default function Container({
           leaveTo='opacity-0 scale-95'
         >
    
-          <nav className=' sticky w-full  z-[1] top-2 md:top-4 max-w-2xl  rounded-md mx-auto flex justify-between items-center pad bg-stickyy  dark:bg-transparent '>
-          <div className='sticky w-full top-2 md:top-4 max-w-2xl p-[1] rounded-md mx-auto flex justify-between items-center   dark:bg-transparent  '>
-            <div className='bg-white rounded pad1'>
+          <nav className=' sticky w-full  z-[1] top-2 md:top-4 max-w-2xl  rounded-md mx-auto flex justify-between items-center pad bg-stickyy filter-blur dark:bg-transparent '>
+          <div className='sticky w-full top-2 md:top-4 max-w-2xl p-[1] brightdouble  mx-auto flex justify-between items-center   rounded-sm  pad dark:bg-transparent  '>
+            <div className='ml-1 text-white bg-white rounded '>
             <button
-              className='text-2xl button-primary-y'
+              className='text-2xl ring-1 ring-white/30 font-sfprodisplaylight text-light button-primary-y'
               onClick={() => setIsOpen(!isOpen)}
             >
               
@@ -140,7 +140,7 @@ export default function Container({
                   aria-label='Twitter'
                 >
                 
-                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-white dark:hover:text-opacity-50' />
+                  <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-transparent dark:bg-transparent dark:hover:text-opacity-50' />
                 </a>
                 <a
                   href='https://github.com/j-schneble/'
@@ -149,7 +149,7 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Github'
                 >
-                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-white dark:hover:text-opacity-50 ' />
+                  <IoLogoGithub className='w-6 h-auto transition-all duration-200 rounded-sm fill-current text-indigo-50 dark:text-transparent dark:bg-transparent dark:hover:text-opacity-50 ' />
                 </a>    
               </div>
             )}

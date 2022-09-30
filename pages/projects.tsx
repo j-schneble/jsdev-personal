@@ -6,7 +6,7 @@ import { useState } from "react";
 import ProjectsComp from '../components/projects/ProjectsComp';
 import { projects as projectsData } from '../data/currently/buildsItems';
 import { Link } from '@chakra-ui/react'
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
+import { BsFillArrowUpRightSquareFill } from 'react-icons/bs'
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
@@ -18,12 +18,12 @@ const Projects = () => {
   return (
     <Container  >
      
-      <h1 className='flex p-2 text-lg text-whitefont-sfprodisplayregular'>  Constantly looking for a new way to understand and create, I am always working on 
+      <h1 className='flex p-1 text-lg text-whitefont-sfprodisplayregular'>  Constantly looking for a new way to understand and create, I am always working on 
                 new projects.  </h1>
     
              <NextLink href="https://www.github.com/j-schneble"  passHref scroll={false}>
         
-            <Link className='flex p-1 pb-4 mb-8 text-lg text-white/80 indent-2 font-sfprodisplaylight' > Check out more on my Github {''} <BsBoxArrowInUpRight className='w-6 h-6 pt-1 pl-1 text-white' /></Link> 
+            <Link className='flex p-1 pb-4 mb-6 masked-copy md-type' > <p> Check out more on my Github </p> {''} <BsFillArrowUpRightSquareFill className='w-6 h-6 pb-1 pl-1 text-white' /></Link> 
             </NextLink>
       <div className='col-span-12 sm:col-span-6 lg:col-span-6 '>
       

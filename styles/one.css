@@ -504,3 +504,67 @@ backdrop-filter: blur(30px);
 .pad2 {
   padding:0.035rem
 }
+
+.masked-copy { 
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+.masked-copy h2 { 
+  color:  #ffffff;
+  display: inline;
+  /* Get the font sizes and other features from those set on the parent */
+  font:inherit;
+}
+
+.projdisp-copy {
+  color:  #ffffff;
+  display: inline;
+  /* Get the font sizes and other features from those set on the parent */
+  font:inherit;
+}
+.big-type { 
+  /* Copied almost wholesale from the Apple site CSS; changed the font-stack */
+ 
+    font-size: 1.975rem;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  /* Nice, chunky, bold! */
+
+    font-family: SF-Pro-Display-Regular, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.md-type {
+  font-size: 1rem;
+  line-height: 1.5; /* The height Apple used to tighten up the spacing a bit. */
+  /* Nice, chunky, bold! */
+  font-family: SF-Pro-Display-Rounded, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+.projdisp-type {
+  font-size: 1.275rem;
+  line-height: 1.0625; /* The height Apple used to tighten up the spacing a bit. */
+  /* Nice, chunky, bold! */
+
+    font-family: SF-Pro-Display-Regular, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.masked-copy p {
+  color: rgb(255 255 255 / 0.8);
+  display: inline;
+
+  /* Get the font sizes and other features from those set on the parent */
+  font:inherit;
+}
+.dark .backgro {
+  background-color: #121217;
+}
+.dark .bgdark {
+ background-color:hsl(0, 0%, 0%);
+
+}
+
+.dark .txdark{
+  color:hsl(0, 0%, 0%);
+}
+
+.masc {
+  color:  #ffffff;
+ 
+}
+

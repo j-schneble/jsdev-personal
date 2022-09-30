@@ -27,14 +27,14 @@ const Home: NextPage = () => {
    
     <Container>
           <header className='flex flex-col gap-3 '>
-        <div className='flex items-center gap-4'>  
+        <div className='flex items-center gap-4 big-type masked-copy '>  
     
-           <h1 className='text-3xl text-white indent-1 font-sfprodisplayregular'>  Jack Schneble   </h1>
+           <h2 className=' font-sfprodisplayrounded'>  Jack Schneble    </h2>
    
 </div>       
          
    
-        <div className='flex flex-col text-left text-white/80 text-md font-sfprodisplaylight'>
+        <div className='flex flex-col text-left masked-copy md-type'>
           <p>
            A developer that believes in discovering the &quot;why.&quot; As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create 
                 efficient and beautiful software. 
@@ -43,18 +43,18 @@ const Home: NextPage = () => {
           </div> 
        
         </header>
-        <div className='flex flex-col gap-2 mt-4 '>
+        <div className='flex flex-col gap-2 mt-4 masked-copy md-type '>
        
-        <p className='flex flex-col text-left text-white/80 text-md font-sfprodisplaylight'>
+        <p className='flex flex-col text-left '>
           I build web applications and websites that are efficient, well-designed, and performant. I help my clients create the best possible digital products for their businesses. I dont just develop websites and apps, I make them beautiful, fast and accessible to all. 
         </p>
         </div>
         
        <div className='flex flex-col gap-2 mt-12 '>
         <h1 className='text-lg font-light text-white font-sfprodisplaylight'><ImSpinner9/></h1>
-        <div className='flex flex-col gap-2 '>
+        <div className='flex flex-col gap-2 masked-copy md-type'>
           
-          <p className="text-md indent-0.2  font-sfprodisplaylight  text-white/95 ">
+          <p className=" indent-0.2    ">
 Tools and technologies I have been using on a regular basis.
           </p>
         </div>
@@ -62,8 +62,8 @@ Tools and technologies I have been using on a regular basis.
         <div className="p-4">
 
        
-          <div className='items-center text-center rounded p-[1] bg-transparent place-content-evenly'>
-            <div className='grid items-center grid-cols-2 gap-8 p-3 text-center rounded place-content-evenly'>
+        
+            <div className='flex flex-col w-full'>
 
     
           {/* Lazy */}
@@ -81,20 +81,25 @@ Tools and technologies I have been using on a regular basis.
                 key={tool.name}
                 name={tool.name}
                 url={tool.url}
+                exp={tool.exp}
+                exp1={tool.exp1}
               />
             ))}
                     </div>
        
-          </div>
+
         </div>
       </div>
 
       <h2 className='mt-10 text-2xl text-white font-sfprodisplayregular'>Recent</h2>
-        <Text className="mt-1 text-md indent-0.5  font-sfprodisplaylight text-white/95">
+      <div className='masked-copy md-type'>
+      <p className="mt-1  indent-0.5  ">
                Projects that I am currently working on below
-        </Text>              
+        </p>
+      </div>
+              
    
-          <div className='mt-4'>
+          <div className=''>
              <Builds />
              </div>
              

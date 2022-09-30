@@ -13,7 +13,7 @@ export default function ProjectComp() {
         <Parallax key={key}>
           <div
            
-            className='transition-all rounded-sm cursor-pointer z-5 ring-1 ring-white/75 group hover:text-black/90'
+            className='transition-all rounded-sm cursor-pointer z-5 ring-2 ring-white/25 group hover:text-black/90'
           > 
             <div className='h-52 w-20% relative'>
               <Image
@@ -26,9 +26,9 @@ export default function ProjectComp() {
               />
             </div>
 
-          <div className='flex flex-row gap-6 p-1 rounded bg-gray-1000 '>
+          <div className='flex flex-row gap-6 p-1 rounded dark:bgdark bgdark '>
             <NextLink href={project.deployed_url}  passHref scroll={false}>       
-              <Link className='pb-1 ml-1 text-xl text-white font-semi-bold font-sfprodisplayregular'>
+              <Link className='py-2 ml-1 font-semi-bold projdisp-copy projdisp-type'>
                 {project.name}
                 </Link>
                 </NextLink>

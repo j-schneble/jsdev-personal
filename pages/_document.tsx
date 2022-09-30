@@ -11,7 +11,7 @@ export default function Document() {
           type='font/woff2'
           crossOrigin='anonymous'
         /> */}
-        <link href='/images/newnew.png' rel='shortcut icon' />
+        <link href='/images/jslogo.png' rel='shortcut icon' />
         <link href='/static/favicons/site.webmanifest' rel='manifest' />
         {/* <link
           rel='preconnect'
@@ -19,18 +19,18 @@ export default function Document() {
           crossOrigin=''
         /> */}
         <link
-          href='/images/newnew.png'
+          href='/images/jslogo.png'
           rel='apple-touch-icon'
           sizes='180x180'
         />
         <link
-          href='/images/newnew.png'
+          href='/images/jslogo.png'
           rel='icon'
           sizes='32x32'
           type='image/png'
         />
         <link
-          href='/images/thelogo.png'
+          href='/images/jslogo.png'
           rel='icon'
           sizes='16x16'
           type='image/png'

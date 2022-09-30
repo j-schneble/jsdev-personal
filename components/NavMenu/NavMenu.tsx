@@ -252,7 +252,7 @@ import React, {
             leaveTo='opacity-0'
           >
             <Dialog.Overlay
-              className={cn('fixed inset-0 bg-gray-50/75 dark:bg-black/75')}
+              className={cn('fixed inset-0 bg-gray-50/75 dark:bg-black/90')}
             />
           </Transition.Child>
   
@@ -268,9 +268,9 @@ import React, {
             <div
               className={cn(
                 'relative',
-                'bg-primary filter-blur',
+                'bgdark filter-blur',
                 'rounded-md shadow-2xl dark:shadow-gray-900',
-                'ring-1 ring-black/10 dark:ring-gray-700/50',
+                'ring-1 ring-white/10 dark:ring-white/25',
                 'flex flex-col'
               )}
             >
