@@ -7,7 +7,7 @@ import { SiGmail } from 'react-icons/si'
 export const siteConfig = {
     copyright: `Copyright © ${new Date().getFullYear()} jack. All Rights Reserved.`,
     author: {
-        name: "Jack Schneble",
+        name: "js.",
         accounts: [
             {
                 url: "https://github.com/j-schneble",

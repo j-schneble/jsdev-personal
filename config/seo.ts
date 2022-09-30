@@ -1,18 +1,18 @@
 export const baseUrl =
-  process.env.NODE_ENV === 'production' ? 'https://jackschneble.com' : ''
+  process.env.NODE_ENV === 'production' ? 'https://schneble.io' : ''
 
 export const defaultSEO = {
-  title: 'Jack Schneble',
+  title: 'js.',
   description: 'Developer.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
-    site_name: 'Jack Schneble',
+    site_name: 'js.',
     images: [
       {
         url: `${baseUrl}/static/images/logo.png`,
-        alt: 'Jack Schneble',
+        alt: 'js.',
       },
     ],
   },
