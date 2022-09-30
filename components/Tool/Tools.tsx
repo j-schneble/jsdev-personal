@@ -33,14 +33,14 @@ export default function Tool({
 
 <div className='relative flex flex-row items-center justify-between '>
   <div className='flex'>
-  <h2 className='p-2 ml-4 text-2xl bg-black rounded-sm ring-1 ring-white/10 masc'>{icon}</h2>
-        <h2 className='p-2 pl-3 pr-10 font-light text-left font-sfprodisplayrounded'>{name}</h2>
+  <h2 className='p-2 ml-4 text-2xl rounded-sm toolmobicon toolicon masc'>{icon}</h2>
+        <h2 className='p-2 pl-3 pr-10 font-light text-left toolmobtitle font-sfprodisplayrounded'>{name}</h2>
   </div>
 
    
  <div className='flex'>
- <h2 className='px-2 py-1 mr-2 text-sm font-light bg-gray-900 rounded font-sfprodisplaylight'>{exp}</h2>
-        <h2 className='px-2 py-1 pr-1 mr-4 text-sm font-light bg-gray-900 rounded font-sfprodisplaylight'>{exp1}</h2>
+ <h2 className='px-2 py-1 mr-2 text-sm font-light bg-gray-900 rounded toolmob font-sfprodisplaylight'>{exp}</h2>
+        <h2 className='px-2 py-1 pr-1 mr-4 text-sm font-light bg-gray-900 rounded toolmob font-sfprodisplaylight'>{exp1}</h2>
  </div>
         
         </div>
