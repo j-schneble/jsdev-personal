@@ -793,10 +793,8 @@
 }
 
 
-.container1 .box1:hover span::before
-{
 
-}
+
 
 .container1 .box1 span::after
 {
@@ -844,11 +842,7 @@
   color: #fff;
 }
 
-.container1 .box1:hover .content1
-{
 
- 
-}
 
 .circle1{
   height:200px;

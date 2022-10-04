@@ -18,7 +18,6 @@ export const builds: CurrentProject[] = [
       deployed_url: 'https://pr-service.vercel.app/',
       source_url: 'https://pr-service.vercel.app/' 
     },
-  
   ]
   export const projects: IProject[] = [
     { 
