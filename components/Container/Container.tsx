@@ -139,7 +139,6 @@ export default function Container({
                   rel='noreferrer'
                   aria-label='Twitter'
                 >
-                
                   <IoLogoLinkedin className='w-6 h-auto transition-all duration-200 rounded-md fill-current text-indigo-50 dark:text-transparent dark:bg-transparent dark:hover:text-opacity-50' />
                 </a>
                 <a
