@@ -28,7 +28,7 @@ export default function Tool({
       target='_blank'
       rel='noopener noreferrer'
     >
-      <div className='rounded-sm py-7 dark:bgdark hover:dark:bg-gray-800/80 bgdark halfover fifif filter-blur ring-2 ring-white/10'>
+      <div className='rounded-sm py-7 mbpad dark:bgdark hover:dark:bg-gray-800/80 bgdark halfover fifif filter-blur ring-2 ring-white/10'>
 
 
 <div className='relative flex flex-row items-center justify-between '>
