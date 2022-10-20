@@ -7,7 +7,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import React from 'react';
-import Chieftools from '../../components/ProjectTools/getchief'
+import Chieftools from '../../components/ProjectTools/Chieftools'
 import { GetChiefBox } from '../../data/tools/toolBox'
 
 const ChiefAnalytics = () => {
