@@ -22,11 +22,11 @@ const ChiefAnalytics = () => {
                 </Heading>
                     </div>
                     <div className="flex items-center">    
-            <div className='mb-2 ml-3 mob-w'>                         
+            <div className='w-full mb-2 mob-w'>                         
               <Image               
               src='/images/getchief.png'
               objectFit='cover' 
-              className="border rounded-md shadow-sm  shadow-gray-800" 
+              className="border rounded-md shadow-sm shadow-gray-800" 
               alt='mysite'       
                 />   
             </div>         

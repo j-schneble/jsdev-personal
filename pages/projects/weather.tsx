@@ -23,7 +23,7 @@ const Weather = () => {
 
                 </div>
                 <div className="flex items-center">
-                    <div  className='mb-2 ml-3 mob-w'>
+                    <div  className='mb-2 w-full mob-w'>
                     <Image               
               src='/images/weatha.png'
               objectFit='cover' 

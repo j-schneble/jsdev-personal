@@ -17,7 +17,7 @@ const inote = () => {
       <div className='px-1 py-2 rounded-sm shadow-2xl ring-1 ring-white/25 bg-gray-1000/95 filter-blur shadow-gray-900 '>
           <Box className=''>
               <div className='flex flex-col gap-2'>
-                        <Heading className="mt-5 mb-4 ml-2 text-2xl  leading-none tracking-wider text-left text-white font-sfprodisplayregular">
+                        <Heading className="mt-5 mb-4 ml-2 text-2xl leading-none tracking-wider text-left text-white font-sfprodisplayregular">
                             iNote
                         </Heading>
                     </div>
@@ -26,7 +26,7 @@ const inote = () => {
                         <Image               
                             src='/images/savednote.png'
                             objectFit='cover' 
-                            className="border rounded-md shadow-sm  shadow-gray-800" 
+                            className="border rounded-md shadow-sm shadow-gray-800" 
                             alt='mysite'       
                         /> 
                         </div>
