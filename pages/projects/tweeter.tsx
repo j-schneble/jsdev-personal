@@ -26,7 +26,7 @@ const Tweeter = () => {
               <Image               
               src='/images/tweeter.png'
               objectFit='cover' 
-              className="border rounded-md shadow-sm zoomA shadow-gray-800" 
+              className="border rounded-md shadow-sm  shadow-gray-800" 
               alt='mysite'       
                 />   
             </div>         

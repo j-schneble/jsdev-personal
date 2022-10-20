@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         </div>
         
        <div className='flex flex-col gap-2 mt-12 '>
-        <h1 className='text-lg font-light text-white font-sfprodisplaylight'><ImSpinner9/></h1>
+        <h1 className='text-2xl font-light text-white font-sfprodisplaylight'>❖</h1>
         <div className='flex flex-col gap-2 masked-copy md-type'>
           
           <p className=" indent-0.2    ">
@@ -91,7 +91,7 @@ Tools and technologies I have been using on a regular basis.
         </div>
       </div>
 
-      <h2 className='mt-10 text-2xl text-white font-sfprodisplayregular'>Recent</h2>
+      <h2 className='mt-10 text-2xl text-white font-sfprodisplayregular'>Recently</h2>
       <div className='masked-copy md-type'>
       <p className="mt-1  indent-0.5  ">
                Projects that I am currently working on below

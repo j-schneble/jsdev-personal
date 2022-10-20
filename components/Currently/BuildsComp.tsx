@@ -31,7 +31,7 @@ export default function Builds() {
           <div className='flex flex-row gap-6 p-1 rounded dark:bgdark bgdark '>
           <NextLink href={item.deployed_url}  passHref scroll={false}> 
             <Link className='py-2 ml-1 projdisp-copy projdisp-type font-semi-bold '>
-              {item.name}
+              {item.name} 
               </Link>
               </NextLink>
               

@@ -26,7 +26,7 @@ const ichatv1 = () => {
                         <Image               
                             src='/images/iChatv1.png'
                             objectFit='cover' 
-                            className="border rounded-md shadow-sm zoomA shadow-gray-800" 
+                            className="border rounded-md shadow-sm  shadow-gray-800" 
                             alt='mysite'       
                         /> 
                         </div>

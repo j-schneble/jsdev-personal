@@ -23,7 +23,7 @@ const Projects = () => {
     
              <NextLink href="https://www.github.com/j-schneble"  passHref scroll={false}>
         
-            <Link className='flex p-1 pb-4 mb-6 masked-copy md-type' > <p> Check out more on my Github </p> {''} <BsFillArrowUpRightSquareFill className='w-6 h-6 pb-1 pl-1 text-white' /></Link> 
+            <Link className='flex p-1 pb-4 mb-6 masked-copy md-type' > <p> Check out more on my Github </p> {''} <p className='w-8 pb-1 pl-1 text-white h-7' >↗︎</p></Link> 
             </NextLink>
       <div className='col-span-12 sm:col-span-6 lg:col-span-6 '>
       
