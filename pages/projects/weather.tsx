@@ -25,7 +25,7 @@ const Weather = () => {
                 <div className="flex items-center">
                     <div  className='mb-2 ml-3 mob-w'>
                     <Image               
-              src='/images/weather/weather.png'
+              src='/images/weatha.png'
               objectFit='cover' 
               className="border rounded-md shadow-sm zoomA shadow-gray-800" 
               alt='mysite'       
@@ -62,7 +62,7 @@ const Weather = () => {
         </p> 
 
         </div>   
-        <div className='grid grid-cols-2 ml-1 p-2'>
+        <div className='grid grid-cols-2 p-2 ml-1'>
                 {/* Lazy */}
                     {WeatherBox.sort((a, b) => {
                     if (a.name < b.name) {

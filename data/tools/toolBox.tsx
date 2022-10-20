@@ -328,3 +328,44 @@ export const PersonalBox: Personal[] = [
 
 
 ]
+
+export const GetChiefBox: Personal[] = [
+  {
+    name: 'Next.js',
+    icon: <SiNextdotjs />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Chakra',
+    icon: <SiChakraui />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Typescript',
+    icon: <SiTypescript />,
+    url: "https://javascript.com/",
+  },
+
+
+]
+
+
+export const PrimoBox: Personal[] = [
+  {
+    name: 'Next.js',
+    icon: <SiNextdotjs />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Chakra',
+    icon: <SiChakraui />,
+    url: "https://javascript.com/",
+  },
+  {
+    name: 'Typescript',
+    icon: <SiTypescript />,
+    url: "https://javascript.com/",
+  },
+
+
+]
