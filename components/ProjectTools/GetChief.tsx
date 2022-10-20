@@ -1,6 +1,6 @@
 import { cn } from '../../lib/classNames'
 
-interface IchatProps {
+interface ChieftoolsProps {
   name: string
 
   icon?: React.ReactNode
@@ -12,7 +12,7 @@ export default function Chieftools({
 
   icon,
   url,
-}: IchatProps): JSX.Element {
+}: ChieftoolsProps): JSX.Element {
   return (
     <a
       className={cn(

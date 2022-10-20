@@ -8,7 +8,7 @@ export const builds: CurrentProject[] = [
     name: 'getChiefAnalytics',
     description: 'Working on a new potential site for my analytics company. ',
     image_path: '/images/newchiefscreen.png',
-    deployed_url: 'https://pr-service.vercel.app/',
+    deployed_url: '/projects/chiefanalytics',
     source_url: 'https://pr-service.vercel.app/' 
   },
     {    

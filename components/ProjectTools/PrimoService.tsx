@@ -1,6 +1,6 @@
 import { cn } from '../../lib/classNames'
 
-interface IchatProps {
+interface PrimoProps {
   name: string
 
   icon?: React.ReactNode
@@ -12,7 +12,7 @@ export default function Primotools({
 
   icon,
   url,
-}: IchatProps): JSX.Element {
+}: PrimoProps): JSX.Element {
   return (
     <a
       className={cn(
